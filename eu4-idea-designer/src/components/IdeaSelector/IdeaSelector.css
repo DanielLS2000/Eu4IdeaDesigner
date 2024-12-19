@@ -1,0 +1,10 @@
+.titles {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    align-items: center;
+}
+
+.ideaSelector {
+    width: 70%;
+}

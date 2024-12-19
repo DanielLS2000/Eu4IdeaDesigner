@@ -1,0 +1,10 @@
+.ideaRow {
+    display: flex;
+}
+
+.item {
+    padding: 5px;
+    text-align: center;
+    flex-basis: 20%;
+    flex-shrink: 0;
+}
