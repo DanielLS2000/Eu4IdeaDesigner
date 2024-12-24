@@ -19,3 +19,13 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.mainContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.secondaryContainer {
+  width: 30%;
+}
