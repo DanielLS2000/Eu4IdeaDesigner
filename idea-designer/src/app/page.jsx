@@ -14,14 +14,20 @@ export default function Home() {
     <div className="">
       <CountriesProvider>
         <IdeaSetProvider>
-          <Header/>
-          <div className="mainContainer">
-            <IdeaSelector/>
+
+          <div className="cabecalho">
+            <Header/>
           </div>
-          {/* <div className="mainContainer">
+          <div className="mainConteiner">
+            <div className="primaryContainer">
+              <IdeaSelector/>
+            </div>
+            <div className="secondaryContainer">
               <Preview/>
               <TotalCost/>
-          </div> */}
+            </div>
+          </div>
+        
         </IdeaSetProvider>
       </CountriesProvider>
     </div>

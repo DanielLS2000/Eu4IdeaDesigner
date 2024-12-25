@@ -6,7 +6,8 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "national_tax_modifier.png"
+        "image": "national_tax_modifier.png",
+        "name": "global_tax_modifier"
     },
     {
         "bonus": "Production efficiency",
@@ -15,25 +16,28 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "production_efficiency.png"
+        "image": "production_efficiency.png",
+        "name": "production_efficiency"
     },
     {
         "bonus": "National unrest",
-        "per_level": "\u22120.50",
+        "per_level": "-0.50",
         "cost_per_level": 3.0,
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "national_unrest.png"
+        "image": "national_unrest.png",
+        "name": "global_unrest"
     },
     {
         "bonus": "Stability cost modifier",
-        "per_level": "\u22125.0",
+        "per_level": "-5.0",
         "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "stability_cost_modifier.png"
+        "image": "stability_cost_modifier.png",
+        "name": "stability_cost_modifier"
     },
     {
         "bonus": "Missionaries",
@@ -42,52 +46,58 @@
         "type": "absolute",
         "base_cost": "15",
         "category": "ADM",
-        "image": "missionaries.png"
+        "image": "missionaries.png",
+        "name": "missionaries"
     },
     {
         "bonus": "Yearly inflation reduction",
-        "per_level": "\u22120.05",
+        "per_level": "-0.05",
         "cost_per_level": 5.0,
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "yearly_inflation_reduction.png"
+        "image": "yearly_inflation_reduction.png",
+        "name": "inflation_reduction"
     },
     {
         "bonus": "Reduce inflation cost",
-        "per_level": "\u22125.0",
+        "per_level": "-5.0",
         "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "reduce_inflation_cost.png"
+        "image": "reduce_inflation_cost.png",
+        "name": "reduce_inflation_cost"
     },
     {
         "bonus": "Interest per annum",
-        "per_level": "\u22120.50",
+        "per_level": "-0.50",
         "cost_per_level": 25.0,
         "type": "absolute",
         "base_cost": "5",
         "category": "ADM",
-        "image": "interest_per_annum.png"
+        "image": "interest_per_annum.png",
+        "name": "interest"
     },
     {
         "bonus": "Construction cost",
-        "per_level": "\u22125.0",
+        "per_level": "-5.0",
         "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "construction_cost.png"
+        "image": "construction_cost.png",
+        "name": "build_cost"
     },
     {
         "bonus": "Development cost",
-        "per_level": "\u221210.0",
+        "per_level": "-10.0",
         "cost_per_level": 25.0,
         "type": "percentage",
         "base_cost": "5",
         "category": "ADM",
-        "image": "development_cost.png"
+        "image": "development_cost.png",
+        "name": "development_cost"
     },
     {
         "bonus": "Missionary strength",
@@ -96,7 +106,8 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "missionary_strength.png"
+        "image": "missionary_strength.png",
+        "name": "global_missionary_strength"
     },
     {
         "bonus": "Yearly prestige",
@@ -105,16 +116,18 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "yearly_prestige.png"
+        "image": "yearly_prestige.png",
+        "name": "prestige"
     },
     {
         "bonus": "Prestige decay",
-        "per_level": "\u22120.5",
+        "per_level": "-0.5",
         "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "prestige_decay.png"
+        "image": "prestige_decay.png",
+        "name": "prestige_decay"
     },
     {
         "bonus": "Yearly legitimacy",
@@ -123,7 +136,8 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "yearly_legitimacy.png"
+        "image": "yearly_legitimacy.png",
+        "name": "legitimacy"
     },
     {
         "bonus": "Yearly horde unity",
@@ -132,7 +146,8 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "yearly_horde_unity.png"
+        "image": "yearly_horde_unity.png",
+        "name": "horde_unity"
     },
     {
         "bonus": "Yearly devotion",
@@ -141,7 +156,8 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "yearly_devotion.png"
+        "image": "yearly_devotion.png",
+        "name": "devotion"
     },
     {
         "bonus": "Yearly republican tradition",
@@ -150,34 +166,38 @@
         "type": "absolute",
         "base_cost": "20",
         "category": "ADM",
-        "image": "yearly_republican_tradition.png"
+        "image": "yearly_republican_tradition.png",
+        "name": "republican_tradition"
     },
     {
         "bonus": "Technology cost",
-        "per_level": "\u22125.0",
+        "per_level": "-5.0",
         "cost_per_level": 25.0,
         "type": "percentage",
         "base_cost": "5",
         "category": "ADM",
-        "image": "technology_cost.png"
+        "image": "technology_cost.png",
+        "name": "technology_cost"
     },
     {
         "bonus": "Idea cost",
-        "per_level": "\u22125.0",
+        "per_level": "-5.0",
         "cost_per_level": 15.0,
         "type": "percentage",
         "base_cost": "3",
         "category": "ADM",
-        "image": "idea_cost.png"
+        "image": "idea_cost.png",
+        "name": "idea_cost"
     },
     {
         "bonus": "Advisor costs",
-        "per_level": "\u22125.0",
+        "per_level": "-5.0",
         "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "advisor_costs.png"
+        "image": "advisor_costs.png",
+        "name": "advisor_cost"
     },
     {
         "bonus": "Possible advisors",
@@ -186,7 +206,8 @@
         "type": "absolute",
         "base_cost": "5",
         "category": "ADM",
-        "image": "possible_advisors.png"
+        "image": "possible_advisors.png",
+        "name": "advisor_pool"
     },
     {
         "bonus": "Tolerance of the true faith",
@@ -195,7 +216,8 @@
         "type": "absolute",
         "base_cost": "3",
         "category": "ADM",
-        "image": "tolerance_of_the_true_faith.png"
+        "image": "tolerance_of_the_true_faith.png",
+        "name": "tolerance_own"
     },
     {
         "bonus": "Tolerance of heretics",
@@ -204,7 +226,8 @@
         "type": "absolute",
         "base_cost": "3",
         "category": "ADM",
-        "image": "tolerance_of_heretics.png"
+        "image": "tolerance_of_heretics.png",
+        "name": "tolerance_heretic"
     },
     {
         "bonus": "Tolerance of heathens",
@@ -213,7 +236,8 @@
         "type": "absolute",
         "base_cost": "3",
         "category": "ADM",
-        "image": "tolerance_of_heathens.png"
+        "image": "tolerance_of_heathens.png",
+        "name": "tolerance_heathen"
     },
     {
         "bonus": "Chance of new heir",
@@ -222,7 +246,8 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "chance_of_new_heir.png"
+        "image": "chance_of_new_heir.png",
+        "name": "heir_chance"
     },
     {
         "bonus": "Hostile core-creation cost on us",
@@ -231,16 +256,28 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "hostile_core-creation_cost_on_us.png"
+        "image": "hostile_core-creation_cost_on_us.png",
+        "name": "hostile_core-creation_cost_on_us"
+    },
+    {
+        "bonus": "Number of possible parliament issues",
+        "per_level": "+1",
+        "cost_per_level": 30.0,
+        "type": "absolute",
+        "base_cost": "30",
+        "category": "ADM",
+        "image": "num_of_parliament_issues.png",
+        "name": "num_of_parliament_issues"
     },
     {
         "bonus": "Core-creation cost",
-        "per_level": "\u22125.0",
+        "per_level": "-5.0",
         "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "core-creation_cost.png"
+        "image": "core-creation_cost.png",
+        "name": "core_creation"
     },
     {
         "bonus": "Income from vassals",
@@ -249,7 +286,8 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "income_from_vassals.png"
+        "image": "income_from_vassals.png",
+        "name": "vassal_income"
     },
     {
         "bonus": "Religious unity",
@@ -258,16 +296,18 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "religious_unity.png"
+        "image": "religious_unity.png",
+        "name": "religious_unity"
     },
     {
         "bonus": "Autonomy change cooldown",
-        "per_level": "\u221210.0",
+        "per_level": "-10.0",
         "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "autonomy_change_cooldown.png"
+        "image": "autonomy_change_cooldown.png",
+        "name": "autonomy_change_cooldown"
     },
     {
         "bonus": "Imperial authority growth modifier",
@@ -276,34 +316,38 @@
         "type": "percentage",
         "base_cost": "5",
         "category": "ADM",
-        "image": "imperial_authority_growth_modifier.png"
+        "image": "imperial_authority_growth_modifier.png",
+        "name": "imperial_authority"
     },
     {
         "bonus": "Administrative free policies",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 30.0,
         "type": "absolute",
         "base_cost": "30",
         "category": "ADM",
-        "image": "administrative_free_policies.png"
+        "image": "administrative_free_policies.png",
+        "name": "free_adm_policy"
     },
     {
         "bonus": "Administrative possible policies",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 30.0,
         "type": "absolute",
         "base_cost": "30",
         "category": "ADM",
-        "image": "administrative_possible_policies.png"
+        "image": "administrative_possible_policies.png",
+        "name": "possible_adm_policy"
     },
     {
         "bonus": "Years of separatism",
-        "per_level": "\u22125",
+        "per_level": "-5",
         "cost_per_level": 25.0,
         "type": "absolute",
         "base_cost": "5",
         "category": "ADM",
-        "image": "years_of_separatism.png"
+        "image": "years_of_separatism.png",
+        "name": "years_of_nationalism"
     },
     {
         "bonus": "Female advisor chance",
@@ -312,7 +356,8 @@
         "type": "percentage",
         "base_cost": "0 (max level 10)",
         "category": "ADM",
-        "image": "female_advisor_chance.png"
+        "image": "female_advisor_chance.png",
+        "name": "female_advisor_chance"
     },
     {
         "bonus": "Yearly harmony increase",
@@ -321,7 +366,8 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "yearly_harmony_increase.png"
+        "image": "yearly_harmony_increase.png",
+        "name": "yearly_harmony"
     },
     {
         "bonus": "Religious harmonization speed",
@@ -330,7 +376,8 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "religious_harmonization_speed.png"
+        "image": "religious_harmonization_speed.png",
+        "name": "harmonization_speed"
     },
     {
         "bonus": "Yearly meritocracy",
@@ -339,16 +386,18 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "yearly_meritocracy.png"
+        "image": "yearly_meritocracy.png",
+        "name": "meritocracy"
     },
     {
         "bonus": "Monarch administrative skill",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 45,
         "type": "absolute",
         "base_cost": "45",
         "category": "ADM",
-        "image": "monarch_administrative_skill.png"
+        "image": "monarch_administrative_skill.png",
+        "name": "monarch_administrative_power"
     },
     {
         "bonus": "Maximum absolutism",
@@ -357,7 +406,8 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "maximum_absolutism.png"
+        "image": "maximum_absolutism.png",
+        "name": "max_absolutism"
     },
     {
         "bonus": "Yearly absolutism",
@@ -366,7 +416,8 @@
         "type": "absolute",
         "base_cost": "15",
         "category": "ADM",
-        "image": "yearly_absolutism.png"
+        "image": "yearly_absolutism.png",
+        "name": "yearly_absolutism"
     },
     {
         "bonus": "Administrative efficiency",
@@ -375,7 +426,8 @@
         "type": "percentage",
         "base_cost": "15",
         "category": "ADM",
-        "image": "administrative_efficiency.png"
+        "image": "administrative_efficiency.png",
+        "name": "administrative_efficiency"
     },
     {
         "bonus": "Institution spread",
@@ -384,7 +436,8 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "institution_spread.png"
+        "image": "institution_spread.png",
+        "name": "global_institution_spread"
     },
     {
         "bonus": "Institution spread in true faith provinces",
@@ -393,16 +446,18 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "institution_spread_in_true_faith_provinces.png"
+        "image": "institution_spread_in_true_faith_provinces.png",
+        "name": "institution_spread_from_true_faith"
     },
     {
         "bonus": "Institution embracement cost",
-        "per_level": "\u221210.0",
+        "per_level": "-10.0",
         "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "institution_embracement_cost.png"
+        "image": "institution_embracement_cost.png",
+        "name": "embracement_cost"
     },
     {
         "bonus": "Governing capacity modifier",
@@ -411,7 +466,8 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "governing_capacity_modifier.png"
+        "image": "governing_capacity_modifier.png",
+        "name": "governing_capacity_modifier"
     },
     {
         "bonus": "Church power",
@@ -420,16 +476,18 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "church_power.png"
+        "image": "church_power.png",
+        "name": "church_power_modifier"
     },
     {
         "bonus": "Yearly corruption",
-        "per_level": "\u22120.05",
+        "per_level": "-0.05",
         "cost_per_level": 3.0,
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "yearly_corruption.png"
+        "image": "yearly_corruption.png",
+        "name": "yearly_corruption"
     },
     {
         "bonus": "Caravan power",
@@ -438,7 +496,8 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "caravan_power.png"
+        "image": "caravan_power.png",
+        "name": "caravan_power"
     },
     {
         "bonus": "Monthly fervor",
@@ -447,7 +506,8 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "monthly_fervor.png"
+        "image": "monthly_fervor.png",
+        "name": "monthly_fervor_increase"
     },
     {
         "bonus": "Goods produced modifier",
@@ -456,52 +516,58 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "goods_produced_modifier.png"
+        "image": "goods_produced_modifier.png",
+        "name": "global_trade_goods_size_modifier"
+    },
+    {
+        "bonus": "Global possible number of buildings",
+        "per_level": "+40.0",
+        "cost_per_level": 1,
+        "type": "absolute",
+        "base_cost": "40",
+        "category": "ADM",
+        "image": "goods_produced_modifier.png",
+        "name": "global_allowed_num_of_buildings"
     },
     {
         "bonus": "Administrative technology cost",
-        "per_level": "\u22125.0",
+        "per_level": "-5.0",
         "cost_per_level": 20.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "administrative_technology_cost.png"
+        "image": "administrative_technology_cost.png",
+        "name": "adm_tech_cost_modifier"
     },
     {
         "bonus": "Construction time",
-        "per_level": "\u221210.0",
+        "per_level": "-10.0",
         "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "construction_time.png"
+        "image": "construction_time.png",
+        "name": "build_time"
     },
     {
         "bonus": "State maintenance",
-        "per_level": "\u221210.0",
+        "per_level": "-10.0",
         "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "state_maintenance.png"
+        "image": "state_maintenance.png",
+        "name": "state_maintenance_modifier"
     },
     {
         "bonus": "Monthly autonomy change",
-        "per_level": "\u22120.05",
+        "per_level": "-0.05",
         "cost_per_level": 25.0,
         "type": "absolute",
         "base_cost": "5",
         "category": "ADM",
-        "image": "monthly_autonomy_change.png"
-    },
-    {
-        "bonus": "Monthly piety",
-        "per_level": "\u22120.1",
-        "cost_per_level": 9.0,
-        "type": "percentage",
-        "base_cost": "9",
-        "category": "ADM",
-        "image": "monthly_piety.png"
+        "image": "monthly_autonomy_change.png",
+        "name": "global_autonomy"
     },
     {
         "bonus": "Monthly piety",
@@ -510,7 +576,8 @@
         "type": "percentage",
         "base_cost": "9",
         "category": "ADM",
-        "image": "monthly_piety.png"
+        "image": "monthly_piety.png",
+        "name": "monthly_piety"
     },
     {
         "bonus": "Reform progress growth",
@@ -519,25 +586,28 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "reform_progress_growth.png"
+        "image": "reform_progress_growth.png",
+        "name": "reform_progress_growth"
     },
     {
         "bonus": "Heretic and heathen provinces do not give any penalties",
         "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
+        "cost_per_level": 45,
+        "type": "binary",
         "base_cost": "45",
         "category": "ADM",
-        "image": "heretic_and_heathen_provinces_do_not_give_any_penalties.png"
+        "image": "no_religion_penalty.png",
+        "name": "no_religion_penalty"
     },
     {
         "bonus": "Cost of advisors with ruler's culture",
-        "per_level": "\u22125.0",
+        "per_level": "-5.0",
         "cost_per_level": 1.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "cost_of_advisors_with_ruler's_culture.png"
+        "image": "same_culture_advisor_cost.png",
+        "name": "same_culture_advisor_cost"
     },
     {
         "bonus": "Maximum revolutionary zeal",
@@ -546,7 +616,8 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "maximum_revolutionary_zeal.png"
+        "image": "maximum_revolutionary_zeal.png",
+        "name": "max_revolutionary_zeal"
     },
     {
         "bonus": "Average monarch lifespan",
@@ -555,7 +626,8 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "average_monarch_lifespan.png"
+        "image": "average_monarch_lifespan.png",
+        "name": "average_monarch_lifespan"
     },
     {
         "bonus": "Yearly patriarch authority",
@@ -564,7 +636,8 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "yearly_patriarch_authority.png"
+        "image": "yearly_patriarch_authority.png",
+        "name": "yearly_patriarch_authority"
     },
     {
         "bonus": "Clergy loyalty equilibrium",
@@ -573,7 +646,8 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "clergy_loyalty_equilibrium.png"
+        "image": "clergy_loyalty_equilibrium.png",
+        "name": "church_loyalty_modifier"
     },
     {
         "bonus": "Dhimmi loyalty equilibrium",
@@ -582,7 +656,8 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "dhimmi_loyalty_equilibrium.png"
+        "image": "dhimmi_loyalty_equilibrium.png",
+        "name": "dhimmi_loyalty_modifier"
     },
     {
         "bonus": "Jains loyalty equilibrium",
@@ -591,7 +666,8 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "jains_loyalty_equilibrium.png"
+        "image": "jains_loyalty_equilibrium.png",
+        "name": "jains_loyalty_modifier"
     },
     {
         "bonus": "Yearly revolutionary zeal",
@@ -600,7 +676,8 @@
         "type": "absolute",
         "base_cost": "15",
         "category": "ADM",
-        "image": "yearly_revolutionary_zeal.png"
+        "image": "yearly_revolutionary_zeal.png",
+        "name": "yearly_revolutionary_zeal"
     },
     {
         "bonus": "Missionary strength vs heretics",
@@ -609,7 +686,8 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "missionary_strength_vs_heretics.png"
+        "image": "missionary_strength_vs_heretics.png",
+        "name": "global_heretic_missionary_strength"
     },
     {
         "bonus": "Missionary strength vs heathens",
@@ -618,16 +696,18 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "missionary_strength_vs_heathens.png"
+        "image": "missionary_strength_vs_heathens.png",
+        "name": "global_heathen_missionary_strength"
     },
     {
         "bonus": "Missionary maintenance cost",
-        "per_level": "\u221210.0",
+        "per_level": "-10.0",
         "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "missionary_maintenance_cost.png"
+        "image": "missionary_maintenance_cost.png",
+        "name": "missionary_maintenance_cost"
     },
     {
         "bonus": "Tribal development growth",
@@ -636,34 +716,38 @@
         "type": "absolute",
         "base_cost": "10",
         "category": "ADM",
-        "image": "tribal_development_growth.png"
+        "image": "tribal_development_growth.png",
+        "name": "tribal_development_growth"
     },
     {
         "bonus": "Great project upgrade cost",
-        "per_level": "\u221210.0",
+        "per_level": "-10.0",
         "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "great_project_upgrade_cost.png"
+        "image": "great_project_upgrade_cost.png",
+        "name": "great_project_upgrade_cost"
     },
     {
         "bonus": "All power costs",
-        "per_level": "\u22125.0",
+        "per_level": "-5.0",
         "cost_per_level": 30.0,
         "type": "percentage",
         "base_cost": "30",
         "category": "ADM",
-        "image": "all_power_costs.png"
+        "image": "all_power_costs.png",
+        "name": "all_power_costs"
     },
     {
         "bonus": "Monthly administrative power",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 60.0,
         "type": "absolute",
         "base_cost": "60",
         "category": "ADM",
-        "image": "monthly_administrative_power.png"
+        "image": "monthly_administrative_power.png",
+        "name": "country_admin_power"
     },
     {
         "bonus": "Monthly splendor",
@@ -672,7 +756,8 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "monthly_splendor.png"
+        "image": "monthly_splendor.png",
+        "name": "monthly_splendor"
     },
     {
         "bonus": "Monthly heir claim increase",
@@ -681,7 +766,8 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "monthly_heir_claim_increase.png"
+        "image": "monthly_heir_claim_increase.png",
+        "name": "monthly_heir_claim_increase"
     },
     {
         "bonus": "Monthly heir support gain",
@@ -690,7 +776,8 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "monthly_heir_support_gain.png"
+        "image": "monthly_heir_support_gain.png",
+        "name": "monthly_heir_support_gain"
     },
     {
         "bonus": "Monthly federation favor growth",
@@ -699,7 +786,8 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "monthly_federation_favor_growth.png"
+        "image": "monthly_federation_favor_growth.png",
+        "name": "monthly_federation_favor_growth"
     },
     {
         "bonus": "Yearly tribal allegiance",
@@ -708,7 +796,8 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "yearly_tribal_allegiance.png"
+        "image": "yearly_tribal_allegiance.png",
+        "name": "yearly_tribal_allegiance"
     },
     {
         "bonus": "Mandate growth modifier",
@@ -717,61 +806,68 @@
         "type": "absolute",
         "base_cost": "5",
         "category": "ADM",
-        "image": "mandate_growth_modifier.png"
+        "image": "mandate_growth_modifier.png",
+        "name": "imperial_mandate"
     },
     {
         "bonus": "Length of election term",
-        "per_level": "\u22121",
-        "cost_per_level": null,
+        "per_level": "-1",
+        "cost_per_level": 30.0,
         "type": "absolute",
         "base_cost": "30",
         "category": "ADM",
-        "image": "length_of_election_term.png"
+        "image": "length_of_election_term.png",
+        "name": "length_of_election_term"
     },
     {
         "bonus": "Reelection cost",
-        "per_level": "\u221215.0",
+        "per_level": "-15.0",
         "cost_per_level": 10.0,
         "type": "percentage",
         "base_cost": "10",
         "category": "ADM",
-        "image": "reelection_cost.png"
+        "image": "reelection_cost.png",
+        "name": "reelection_cost"
     },
     {
         "bonus": "States governing cost",
-        "per_level": "\u22125.0",
+        "per_level": "-5.0",
         "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "states_governing_cost.png"
+        "image": "states_governing_cost.png",
+        "name": "states_governing_cost"
     },
     {
         "bonus": "Trade company governing cost",
-        "per_level": "\u22125.0",
+        "per_level": "-5.0",
         "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "trade_company_governing_cost.png"
+        "image": "trade_company_governing_cost.png",
+        "name": "trade_company_governing_cost"
     },
     {
         "bonus": "Expand administration cost",
-        "per_level": "\u221225.0",
+        "per_level": "-25.0",
         "cost_per_level": 20.0,
         "type": "percentage",
         "base_cost": "5",
         "category": "ADM",
-        "image": "expand_administration_cost.png"
+        "image": "expand_administration_cost.png",
+        "name": "expand_administration_cost"
     },
     {
         "bonus": "Curia powers cost",
-        "per_level": "\u221215.0",
+        "per_level": "-15.0",
         "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "curia_powers_cost.png"
+        "image": "curia_powers_cost.png",
+        "name": "curia_powers_cost"
     },
     {
         "bonus": "Prestige per development from missionary",
@@ -780,7 +876,8 @@
         "type": "absolute",
         "base_cost": "0",
         "category": "ADM",
-        "image": "prestige_per_development_from_missionary.png"
+        "image": "prestige_per_development_from_missionary.png",
+        "name": "prestige_per_development_from_missionary"
     },
     {
         "bonus": "Monthly karma",
@@ -789,43 +886,38 @@
         "type": "absolute",
         "base_cost": "9",
         "category": "ADM",
-        "image": "monthly_karma.png"
-    },
-    {
-        "bonus": "Monthly karma",
-        "per_level": "\u22120.01",
-        "cost_per_level": 9.0,
-        "type": "absolute",
-        "base_cost": "9",
-        "category": "ADM",
-        "image": "monthly_karma.png"
+        "image": "monthly_karma.png",
+        "name": "monthly_karma"
     },
     {
         "bonus": "Minimum autonomy in territories",
-        "per_level": "\u22125.0",
+        "per_level": "-5.0",
         "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "minimum_autonomy_in_territories.png"
+        "image": "minimum_autonomy_in_territories.png",
+        "name": "min_autonomy_in_territories"
     },
     {
         "bonus": "Free policies",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 40,
         "type": "absolute",
         "base_cost": "40",
         "category": "ADM",
-        "image": "free_policies.png"
+        "image": "free_policies.png",
+        "name": "free_policy"
     },
     {
         "bonus": "Possible policies",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 50,
         "type": "absolute",
         "base_cost": "50",
         "category": "ADM",
-        "image": "possible_policies.png"
+        "image": "possible_policies.png",
+        "name": "possible_policy"
     },
     {
         "bonus": "Innovativeness gain",
@@ -834,88 +926,38 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "innovativeness_gain.png"
+        "image": "innovativeness_gain.png",
+        "name": "innovativeness_gain"
     },
     {
         "bonus": "Permanent casus belli against neighboring heathens and heretics",
         "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
+        "cost_per_level": 50,
+        "type": "binary",
         "base_cost": "50",
         "category": "ADM",
-        "image": "permanent_casus_belli_against_neighboring_heathens_and_heretics.png"
+        "image": "cb_on_religious_enemies.png",
+        "name": "cb_on_religious_enemies"
     },
     {
         "bonus": "Can fabricate claims in any colonial region belonging to another nation who are also overseas from the province, or to their colonial nations",
         "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
+        "cost_per_level": 35,
+        "type": "binary",
         "base_cost": "35",
         "category": "ADM",
-        "image": "can_fabricate_claims_in_any_colonial_region_belonging_to_another_nation_who_are_also_overseas_from_the_province,_or_to_their_colonial_nations.png"
-    },
-    {
-        "bonus": "Can NOT build over force limit",
-        "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
-        "base_cost": "-25",
-        "category": "ADM",
-        "image": "can_not_build_over_force_limit.png"
-    },
-    {
-        "bonus": "Can NOT build buildings",
-        "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
-        "base_cost": "-40",
-        "category": "ADM",
-        "image": "can_not_build_buildings.png"
-    },
-    {
-        "bonus": "Can NOT declare war",
-        "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
-        "base_cost": "-100",
-        "category": "ADM",
-        "image": "can_not_declare_war.png"
-    },
-    {
-        "bonus": "Can NOT establish colonies",
-        "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
-        "base_cost": "-10",
-        "category": "ADM",
-        "image": "can_not_establish_colonies.png"
-    },
-    {
-        "bonus": "Can NOT send merchants",
-        "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
-        "base_cost": "-40",
-        "category": "ADM",
-        "image": "can_not_send_merchants.png"
-    },
-    {
-        "bonus": "Can NOT send missionaries",
-        "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
-        "base_cost": "-10",
-        "category": "ADM",
-        "image": "can_not_send_missionaries.png"
+        "image": "cb_on_primitives.png",
+        "name": "cb_on_primitives"
     },
     {
         "bonus": "Global monthly devastation",
-        "per_level": "\u22120.05",
+        "per_level": "-0.05",
         "cost_per_level": 25.0,
         "type": "absolute",
         "base_cost": "5",
         "category": "ADM",
-        "image": "global_monthly_devastation.png"
+        "image": "global_monthly_devastation.png",
+        "name": "global_monthly_devastation"
     },
     {
         "bonus": "Global prosperity growth",
@@ -924,7 +966,8 @@
         "type": "absolute",
         "base_cost": "5",
         "category": "ADM",
-        "image": "global_prosperity_growth.png"
+        "image": "global_prosperity_growth.png",
+        "name": "global_prosperity_growth"
     },
     {
         "bonus": "Monthly piety accelerator",
@@ -933,25 +976,28 @@
         "type": "percentage",
         "base_cost": "5",
         "category": "ADM",
-        "image": "monthly_piety_accelerator.png"
+        "image": "monthly_piety_accelerator.png",
+        "name": "monthly_piety_accelerator"
     },
     {
         "bonus": "Monthly gold inflation modifier",
-        "per_level": "\u221225.0",
+        "per_level": "-25.0",
         "cost_per_level": 25.0,
         "type": "percentage",
         "base_cost": "5",
         "category": "ADM",
-        "image": "monthly_gold_inflation_modifier.png"
+        "image": "monthly_gold_inflation_modifier.png",
+        "name": "monthly_gold_inflation_modifier"
     },
     {
         "bonus": "Gold depletion chance modifier",
-        "per_level": "\u221225.0",
+        "per_level": "-25.0",
         "cost_per_level": 25.0,
         "type": "percentage",
         "base_cost": "5",
         "category": "ADM",
-        "image": "gold_depletion_chance_modifier.png"
+        "image": "gold_depletion_chance_modifier.png",
+        "name": "gold_depletion_chance_modifier"
     },
     {
         "bonus": "Maximum tolerance of heretics",
@@ -960,7 +1006,8 @@
         "type": "absolute",
         "base_cost": "3",
         "category": "ADM",
-        "image": "maximum_tolerance_of_heretics.png"
+        "image": "maximum_tolerance_of_heretics.png",
+        "name": "tolerance_of_heretics_capacity"
     },
     {
         "bonus": "Maximum tolerance of heathens",
@@ -969,7 +1016,8 @@
         "type": "absolute",
         "base_cost": "3",
         "category": "ADM",
-        "image": "maximum_tolerance_of_heathens.png"
+        "image": "maximum_tolerance_of_heathens.png",
+        "name": "tolerance_of_heathens_capacity"
     },
     {
         "bonus": "Yearly doom reduction",
@@ -978,7 +1026,8 @@
         "type": "absolute",
         "base_cost": "9",
         "category": "ADM",
-        "image": "yearly_doom_reduction.png"
+        "image": "yearly_doom_reduction.png",
+        "name": "yearly_doom_reduction"
     },
     {
         "bonus": "Yearly authority",
@@ -987,16 +1036,18 @@
         "type": "absolute",
         "base_cost": "9",
         "category": "ADM",
-        "image": "yearly_authority.png"
+        "image": "yearly_authority.png",
+        "name": "yearly_authority"
     },
     {
         "bonus": "Move capital cost modifier",
-        "per_level": "\u221220.0",
+        "per_level": "-20.0",
         "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "move_capital_cost_modifier.png"
+        "image": "move_capital_cost_modifier.png",
+        "name": "move_capital_cost_modifier"
     },
     {
         "bonus": "All estates' loyalty equilibrium",
@@ -1005,115 +1056,128 @@
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
-        "image": "all_estates'_loyalty_equilibrium.png"
+        "image": "all_estate_loyalty_equilibrium.png",
+        "name": "all_estate_loyalty_equilibrium'"
     },
     {
         "bonus": "Morale of armies",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "morale_of_armies.png"
+        "image": "morale_of_armies.png",
+        "name": "land_morale"
     },
     {
         "bonus": "Discipline",
         "per_level": "+2.5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "discipline.png"
+        "image": "discipline.png",
+        "name": "discipline"
     },
     {
         "bonus": "Land maintenance modifier",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "land_maintenance_modifier.png"
+        "image": "land_maintenance_modifier.png",
+        "name": "land_maintenance_modifier"
     },
     {
         "bonus": "Mercenary maintenance",
-        "per_level": "\u221210.0",
-        "cost_per_level": 0.0,
+        "per_level": "-10.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "mercenary_maintenance.png"
+        "image": "mercenary_maintenance.png",
+        "name": "merc_maintenance_modifier"
     },
     {
         "bonus": "Mercenary manpower",
         "per_level": "+12.5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "mercenary_manpower.png"
+        "image": "mercenary_manpower.png",
+        "name": "mercenary_manpower"
     },
     {
         "bonus": "Land force limit modifier",
         "per_level": "+7.5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "land_force_limit_modifier.png"
+        "image": "land_force_limit_modifier.png",
+        "name": "land_forcelimit_modifier"
     },
     {
         "bonus": "National manpower modifier",
         "per_level": "+7.5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "national_manpower_modifier.png"
+        "image": "national_manpower_modifier.png",
+        "name": "global_manpower_modifier"
     },
     {
         "bonus": "Manpower recovery speed",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "manpower_recovery_speed.png"
+        "image": "manpower_recovery_speed.png",
+        "name": "manpower_recovery_speed"
     },
     {
         "bonus": "Reinforce speed",
         "per_level": "+7.5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "reinforce_speed.png"
+        "image": "reinforce_speed.png",
+        "name": "reinforce_speed"
     },
     {
         "bonus": "Attrition for enemies",
         "per_level": "+0.50",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "absolute",
         "base_cost": 0,
         "category": "MIL",
-        "image": "attrition_for_enemies.png"
+        "image": "attrition_for_enemies.png",
+        "name": "hostile_attrition"
     },
     {
         "bonus": "Yearly army tradition",
         "per_level": "+0.50",
-        "cost_per_level": 0.0,
+        "cost_per_level": 15.0,
         "type": "absolute",
         "base_cost": 0,
         "category": "MIL",
-        "image": "yearly_army_tradition.png"
+        "image": "yearly_army_tradition.png",
+        "name": "army_tradition"
     },
     {
         "bonus": "Yearly army tradition decay",
-        "per_level": "\u22120.5",
-        "cost_per_level": 0.0,
+        "per_level": "-0.5",
+        "cost_per_level": 15.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "yearly_army_tradition_decay.png"
+        "image": "yearly_army_tradition_decay.png",
+        "name": "army_tradition_decay"
     },
     {
         "bonus": "Land leader fire",
@@ -1122,7 +1186,8 @@
         "type": "absolute",
         "base_cost": 30,
         "category": "MIL",
-        "image": "land_leader_fire.png"
+        "image": "land_leader_fire.png",
+        "name": "leader_land_fire"
     },
     {
         "bonus": "Land leader shock",
@@ -1131,7 +1196,8 @@
         "type": "absolute",
         "base_cost": 30,
         "category": "MIL",
-        "image": "land_leader_shock.png"
+        "image": "land_leader_shock.png",
+        "name": "leader_land_shock"
     },
     {
         "bonus": "Leader land maneuver",
@@ -1140,7 +1206,8 @@
         "type": "absolute",
         "base_cost": 15,
         "category": "MIL",
-        "image": "leader_land_maneuver.png"
+        "image": "leader_land_maneuver.png",
+        "name": "leader_land_maneuver"
     },
     {
         "bonus": "Leader siege",
@@ -1149,178 +1216,198 @@
         "type": "absolute",
         "base_cost": 30,
         "category": "MIL",
-        "image": "leader_siege.png"
+        "image": "leader_siege.png",
+        "name": "leader_siege"
     },
     {
         "bonus": "Recruitment time",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "recruitment_time.png"
+        "image": "recruitment_time.png",
+        "name": "recruitment_time"
     },
     {
         "bonus": "Prestige from land battles",
         "per_level": "+25.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "prestige_from_land_battles.png"
+        "image": "prestige_from_land_battles.png",
+        "name": "prestige_from_land"
     },
     {
         "bonus": "Fort defense",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "fort_defense.png"
+        "image": "fort_defense.png",
+        "name": "defensiveness"
     },
     {
         "bonus": "Siege ability",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "siege_ability.png"
+        "image": "siege_ability.png",
+        "name": "siege_ability"
     },
     {
         "bonus": "Vassal force limit contribution",
         "per_level": "+50.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "vassal_force_limit_contribution.png"
+        "image": "vassal_force_limit_contribution.png",
+        "name": "vassal_forcelimit_bonus"
     },
     {
         "bonus": "Infantry combat ability",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "infantry_combat_ability.png"
+        "image": "infantry_combat_ability.png",
+        "name": "infantry_power"
     },
     {
         "bonus": "Cavalry combat ability",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "cavalry_combat_ability.png"
+        "image": "cavalry_combat_ability.png",
+        "name": "cavalry_power"
     },
     {
         "bonus": "Artillery combat ability",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "artillery_combat_ability.png"
+        "image": "artillery_combat_ability.png",
+        "name": "artillery_power"
     },
     {
         "bonus": "Infantry cost",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "infantry_cost.png"
+        "image": "infantry_cost.png",
+        "name": "infantry_cost"
     },
     {
         "bonus": "Cavalry cost",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "cavalry_cost.png"
+        "image": "cavalry_cost.png",
+        "name": "cavalry_cost"
     },
     {
         "bonus": "Artillery cost",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "artillery_cost.png"
+        "image": "artillery_cost.png",
+        "name": "artillery_cost"
     },
     {
         "bonus": "Fort maintenance",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "fort_maintenance.png"
+        "image": "fort_maintenance.png",
+        "name": "fort_maintenance_modifier"
     },
     {
         "bonus": "Military free policies",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 30,
         "type": "absolute",
         "base_cost": 30,
         "category": "MIL",
-        "image": "military_free_policies.png"
+        "image": "military_free_policies.png",
+        "name": "free_mil_policy"
     },
     {
         "bonus": "Military possible policies",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 30,
         "type": "absolute",
         "base_cost": 30,
         "category": "MIL",
-        "image": "military_possible_policies.png"
+        "image": "military_possible_policies.png",
+        "name": "possible_mil_policy"
     },
     {
         "bonus": "May recruit female generals",
         "per_level": "Yes",
-        "cost_per_level": 0.0,
-        "type": "absolute",
+        "cost_per_level": 0,
+        "type": "binary",
         "base_cost": 0,
         "category": "MIL",
-        "image": "may_recruit_female_generals.png"
+        "image": "may_recruit_female_generals.png",
+        "name": "may_recruit_female_generals"
     },
     {
         "bonus": "Mercenary discipline",
         "per_level": "+2.5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "mercenary_discipline.png"
+        "image": "mercenary_discipline.png",
+        "name": "mercenary_discipline"
     },
     {
         "bonus": "Fort maintenance on border with rival",
-        "per_level": "\u221210.0",
-        "cost_per_level": 0.0,
+        "per_level": "-10.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "fort_maintenance_on_border_with_rival.png"
+        "image": "fort_maintenance_on_border_with_rival.png",
+        "name": "rival_border_fort_maintenance"
     },
     {
         "bonus": "Blockade impact on siege",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 5.0,
         "type": "absolute",
         "base_cost": 5,
         "category": "MIL",
-        "image": "blockade_impact_on_siege.png"
+        "image": "blockade_impact_on_siege.png",
+        "name": "blockade_impact_on_siege"
     },
     {
         "bonus": "Cavalry to infantry ratio",
         "per_level": "+15.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "cavalry_to_infantry_ratio.png"
+        "image": "cavalry_to_infantry_ratio.png",
+        "name": "cav_to_inf_ratio"
     },
     {
         "bonus": "Artillery bonus vs fort",
@@ -1329,277 +1416,308 @@
         "type": "absolute",
         "base_cost": 3,
         "category": "MIL",
-        "image": "artillery_bonus_vs_fort.png"
+        "image": "artillery_bonus_vs_fort.png",
+        "name": "artillery_levels_available_vs_fort"
     },
     {
         "bonus": "Monarch military skill",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 45,
         "type": "absolute",
         "base_cost": 45,
         "category": "MIL",
-        "image": "monarch_military_skill.png"
+        "image": "monarch_military_skill.png",
+        "name": "monarch_military_power"
     },
     {
         "bonus": "Artillery damage from back row",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "artillery_damage_from_back_row.png"
+        "image": "artillery_damage_from_back_row.png",
+        "name": "backrow_artillery_damage"
     },
     {
         "bonus": "Harsh treatment cost",
-        "per_level": "\u221210.0",
-        "cost_per_level": 0.0,
+        "per_level": "-10.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "harsh_treatment_cost.png"
+        "image": "harsh_treatment_cost.png",
+        "name": "harsh_treatment_cost"
     },
     {
         "bonus": "Fire damage received",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "fire_damage_received.png"
+        "image": "fire_damage_received.png",
+        "name": "fire_damage_received"
     },
     {
         "bonus": "Shock damage received",
         "per_level": "-5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "shock_damage_received.png"
+        "image": "shock_damage_received.png",
+        "name": "shock_damage_received"
     },
     {
         "bonus": "Cavalry flanking ability",
         "per_level": "+25.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 10.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "cavalry_flanking_ability.png"
+        "image": "cavalry_flanking_ability.png",
+        "name": "cavalry_flanking"
     },
     {
         "bonus": "Shock damage",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "shock_damage.png"
+        "image": "shock_damage.png",
+        "name": "shock_damage"
     },
     {
         "bonus": "Land fire damage",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "land_fire_damage.png"
+        "image": "land_fire_damage.png",
+        "name": "fire_damage"
     },
     {
         "bonus": "Movement speed",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "movement_speed.png"
+        "image": "movement_speed.png",
+        "name": "movement_speed"
     },
     {
         "bonus": "Army tradition from battles",
         "per_level": "+50.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "army_tradition_from_battles.png"
+        "image": "army_tradition_from_battles.png",
+        "name": "army_tradition_from_battle"
     },
     {
         "bonus": "Militarization of state",
         "per_level": "+0.05",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "absolute",
         "base_cost": 0,
         "category": "MIL",
-        "image": "militarization_of_state.png"
+        "image": "militarization_of_state.png",
+        "name": "militarization_of_state"
     },
     {
         "bonus": "Reinforce cost",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "reinforce_cost.png"
+        "image": "reinforce_cost.png",
+        "name": "reinforce_cost_modifier"
     },
     {
         "bonus": "Looting speed",
         "per_level": "+10.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "looting_speed.png"
+        "image": "looting_speed.png",
+        "name": "looting_speed"
     },
     {
         "bonus": "Garrison size",
         "per_level": "+10.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "garrison_size.png"
+        "image": "garrison_size.png",
+        "name": "garrison_size"
     },
     {
         "bonus": "Land attrition",
         "per_level": "-10.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "land_attrition.png"
+        "image": "land_attrition.png",
+        "name": "land_attrition"
     },
     {
         "bonus": "Military technology cost",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 20.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "military_technology_cost.png"
+        "image": "military_technology_cost.png",
+        "name": "mil_tech_cost_modifier"
     },
     {
         "bonus": "Leader(s) without upkeep",
         "per_level": "+1",
-        "cost_per_level": 0.0,
+        "cost_per_level": 10.0,
         "type": "absolute",
         "base_cost": 0,
         "category": "MIL",
-        "image": "leader(s)_without_upkeep.png"
+        "image": "free_leader_pool.png",
+        "name": "free_leader_pool"
     },
     {
         "bonus": "Regiment costs",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "regiment_costs.png"
+        "image": "regiment_costs.png",
+        "name": "global_regiment_cost"
     },
     {
         "bonus": "Mercenary cost",
-        "per_level": "\u22122.5",
-        "cost_per_level": 0.0,
+        "per_level": "-2.5",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "mercenary_cost.png"
+        "image": "mercenary_cost.png",
+        "name": "mercenary_cost"
     },
     {
         "bonus": "Recover army morale speed",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "recover_army_morale_speed.png"
+        "image": "recover_army_morale_speed.png",
+        "name": "recover_army_morale_speed"
     },
     {
         "bonus": "Artillery fire",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 25,
         "type": "absolute",
         "base_cost": 25,
         "category": "MIL",
-        "image": "artillery_fire.png"
+        "image": "artillery_fire.png",
+        "name": "artillery_fire"
     },
     {
         "bonus": "Possible Manchu banners",
         "per_level": "+12.5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "possible_manchu_banners.png"
+        "image": "possible_manchu_banners.png",
+        "name": "amount_of_banners"
     },
     {
         "bonus": "National garrison growth",
         "per_level": "+17.5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "national_garrison_growth.png"
+        "image": "national_garrison_growth.png",
+        "name": "global_garrison_growth"
     },
     {
         "bonus": "Available loot",
         "per_level": "+15",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "available_loot.png"
+        "image": "available_loot.png",
+        "name": "loot_amount"
     },
     {
         "bonus": "special unit force limit",
         "per_level": "+15",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "special_unit_force_limit.png"
+        "image": "special_unit_force_limit.png",
+        "name": "special_unit_force_limit"
     },
     {
         "bonus": "Nobility loyalty equilibrium",
         "per_level": "+5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "nobility_loyalty_equilibrium.png"
+        "image": "nobility_loyalty_equilibrium.png",
+        "name": "nobles_loyalty_modifier"
     },
     {
         "bonus": "Marathas loyalty equilibrium",
         "per_level": "+5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "marathas_loyalty_equilibrium.png"
+        "image": "marathas_loyalty_equilibrium.png",
+        "name": "marathas_loyalty_modifier"
     },
     {
         "bonus": "Rajputs loyalty equilibrium",
         "per_level": "+5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "rajputs_loyalty_equilibrium.png"
+        "image": "rajputs_loyalty_equilibrium.png",
+        "name": "rajputs_loyalty_modifier"
     },
     {
         "bonus": "Cossacks loyalty equilibrium",
         "per_level": "+5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "cossacks_loyalty_equilibrium.png"
+        "image": "cossacks_loyalty_equilibrium.png",
+        "name": "cossacks_loyalty_modifier"
     },
     {
         "bonus": "Tribes loyalty equilibrium",
         "per_level": "+5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "tribes_loyalty_equilibrium.png"
+        "image": "tribes_loyalty_equilibrium.png",
+        "name": "tribes_loyalty_modifier"
     },
     {
         "bonus": "Yearly army professionalism",
@@ -1608,61 +1726,68 @@
         "type": "percentage",
         "base_cost": 10,
         "category": "MIL",
-        "image": "yearly_army_professionalism.png"
+        "image": "yearly_army_professionalism.png",
+        "name": "yearly_army_professionalism"
     },
     {
         "bonus": "Army drill gain modifier",
         "per_level": "+12.5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "army_drill_gain_modifier.png"
+        "image": "army_drill_gain_modifier.png",
+        "name": "drill_gain_modifier"
     },
     {
         "bonus": "Regiment drill loss",
-        "per_level": "\u221212.5",
-        "cost_per_level": 0.0,
+        "per_level": "-12.5",
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "regiment_drill_loss.png"
+        "image": "regiment_drill_loss.png",
+        "name": "drill_loss_modifier"
     },
     {
         "bonus": "Infantry fire",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 25,
         "type": "absolute",
         "base_cost": 25,
         "category": "MIL",
-        "image": "infantry_fire.png"
+        "image": "infantry_fire.png",
+        "name": "infantry_fire"
     },
     {
         "bonus": "Infantry shock",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 25,
         "type": "absolute",
         "base_cost": 25,
         "category": "MIL",
-        "image": "infantry_shock.png"
+        "image": "infantry_shock.png",
+        "name": "infantry_shock"
     },
     {
         "bonus": "Cavalry fire",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 25,
         "type": "absolute",
         "base_cost": 25,
         "category": "MIL",
-        "image": "cavalry_fire.png"
+        "image": "cavalry_fire.png",
+        "name": "cavalry_fire"
     },
     {
         "bonus": "Cavalry shock",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 25,
         "type": "absolute",
         "base_cost": 25,
         "category": "MIL",
-        "image": "cavalry_shock.png"
+        "image": "cavalry_shock.png",
+        "name": "cavalry_shock"
     },
     {
         "bonus": "Artillery shock",
@@ -1671,160 +1796,178 @@
         "type": "absolute",
         "base_cost": 15,
         "category": "MIL",
-        "image": "artillery_shock.png"
+        "image": "artillery_shock.png",
+        "name": "artillery_shock"
     },
     {
         "bonus": "Reduced morale damage taken by reserves",
         "per_level": "+15",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "reduced_morale_damage_taken_by_reserves.png"
+        "image": "reduced_morale_damage_taken_by_reserves.png",
+        "name": "morale_damage_received"
     },
     {
         "bonus": "National supply limit modifier",
         "per_level": "+10",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "national_supply_limit_modifier.png"
+        "image": "national_supply_limit_modifier.png",
+        "name": "global_supply_limit_modifier"
     },
     {
         "bonus": "General Recruitment Cost",
-        "per_level": "\u221225",
+        "per_level": "-25",
         "cost_per_level": 15.0,
         "type": "percentage",
         "base_cost": 15,
         "category": "MIL",
-        "image": "general_recruitment_cost.png"
+        "image": "general_recruitment_cost.png",
+        "name": "leader_cost"
     },
     {
         "bonus": "Razing power gain",
         "per_level": "+10",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "razing_power_gain.png"
+        "image": "razing_power_gain.png",
+        "name": "razing_power_gain"
     },
     {
         "bonus": "Manpower in true faith provinces",
         "per_level": "+10",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "manpower_in_true_faith_provinces.png"
+        "image": "manpower_in_true_faith_provinces.png",
+        "name": "manpower_in_true_faith_provinces"
     },
     {
         "bonus": "Monthly military power",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 60,
         "type": "absolute",
         "base_cost": 60,
         "category": "MIL",
-        "image": "monthly_military_power.png"
+        "image": "monthly_military_power.png",
+        "name": "country_military_power"
     },
     {
         "bonus": "Triple manpower increase in religious wars",
         "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
+        "cost_per_level": 50,
+        "type": "binary",
         "base_cost": 50,
         "category": "MIL",
-        "image": "triple_manpower_increase_in_religious_wars.png"
+        "image": "triple_manpower_increase_in_religious_wars.png",
+        "name": "triple_manpower_increase_in_religious_wars"
     },
     {
         "bonus": "Possible cawa",
         "per_level": "+15",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "possible_cawa.png"
+        "image": "possible_cawa.png",
+        "name": "possible_cawa"
     },
     {
         "bonus": "Rebel suppression efficiency",
         "per_level": "+25",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "MIL",
-        "image": "rebel_suppression_efficiency.png"
+        "image": "rebel_suppression_efficiency.png",
+        "name": "rebel_suppression_efficiency"
     },
     {
         "bonus": "Max promoted cultures",
         "per_level": "+1",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "absolute",
         "base_cost": 0,
         "category": "DIP",
-        "image": "max_promoted_cultures.png"
+        "image": "max_promoted_cultures.png",
+        "name": "num_accepted_cultures"
     },
     {
         "bonus": "Culture conversion cost",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "culture_conversion_cost.png"
+        "image": "culture_conversion_cost.png",
+        "name": "culture_conversion_cost"
     },
     {
         "bonus": "Morale of navies",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "morale_of_navies.png"
+        "image": "morale_of_navies.png",
+        "name": "naval_morale"
     },
     {
         "bonus": "Trade efficiency",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "trade_efficiency.png"
+        "image": "trade_efficiency.png",
+        "name": "trade_efficiency"
     },
     {
         "bonus": "Global trade power",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "global_trade_power.png"
+        "image": "global_trade_power.png",
+        "name": "global_trade_power"
     },
     {
         "bonus": "Provincial trade power modifier",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "provincial_trade_power_modifier.png"
+        "image": "provincial_trade_power_modifier.png",
+        "name": "global_prov_trade_power_modifier"
     },
     {
         "bonus": "Trade steering",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "trade_steering.png"
+        "image": "trade_steering.png",
+        "name": "trade_steering"
     },
     {
         "bonus": "Global tariffs",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "global_tariffs.png"
+        "image": "global_tariffs.png",
+        "name": "global_tariffs"
     },
     {
         "bonus": "Diplomatic reputation",
@@ -1833,7 +1976,8 @@
         "type": "absolute",
         "base_cost": 5,
         "category": "DIP",
-        "image": "diplomatic_reputation.png"
+        "image": "diplomatic_reputation.png",
+        "name": "diplomatic_reputation"
     },
     {
         "bonus": "Diplomatic relations",
@@ -1842,7 +1986,8 @@
         "type": "absolute",
         "base_cost": 5,
         "category": "DIP",
-        "image": "diplomatic_relations.png"
+        "image": "diplomatic_relations.png",
+        "name": "diplomatic_upkeep"
     },
     {
         "bonus": "Merchants",
@@ -1851,16 +1996,18 @@
         "type": "absolute",
         "base_cost": 30,
         "category": "DIP",
-        "image": "merchants.png"
+        "image": "merchants.png",
+        "name": "merchants"
     },
     {
         "bonus": "Migration Cost",
         "per_level": "-10.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "migration_cost.png"
+        "image": "migration_cost.png",
+        "name": "migration_cost"
     },
     {
         "bonus": "Colonists",
@@ -1869,7 +2016,8 @@
         "type": "absolute",
         "base_cost": 30,
         "category": "DIP",
-        "image": "colonists.png"
+        "image": "colonists.png",
+        "name": "colonists"
     },
     {
         "bonus": "Diplomats",
@@ -1878,70 +2026,78 @@
         "type": "absolute",
         "base_cost": 30,
         "category": "DIP",
-        "image": "diplomats.png"
+        "image": "diplomats.png",
+        "name": "diplomats"
     },
     {
         "bonus": "Naval maintenance modifier",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "naval_maintenance_modifier.png"
+        "image": "naval_maintenance_modifier.png",
+        "name": "naval_maintenance_modifier"
     },
     {
         "bonus": "Naval force limit modifier",
         "per_level": "+7.5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "naval_force_limit_modifier.png"
+        "image": "naval_force_limit_modifier.png",
+        "name": "naval_forcelimit_modifier"
     },
     {
         "bonus": "Ship durability",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "ship_durability.png"
+        "image": "ship_durability.png",
+        "name": "ship_durability"
     },
     {
         "bonus": "Monthly war exhaustion",
-        "per_level": "\u22120.05",
+        "per_level": "-0.05",
         "cost_per_level": 25.0,
         "type": "absolute",
         "base_cost": 5,
         "category": "DIP",
-        "image": "monthly_war_exhaustion.png"
+        "image": "monthly_war_exhaustion.png",
+        "name": "war_exhaustion"
     },
     {
         "bonus": "Cost of reducing war exhaustion",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "cost_of_reducing_war_exhaustion.png"
+        "image": "cost_of_reducing_war_exhaustion.png",
+        "name": "war_exhaustion_cost"
     },
     {
         "bonus": "Yearly navy tradition",
         "per_level": "+0.50",
-        "cost_per_level": 0.0,
+        "cost_per_level": 15.0,
         "type": "absolute",
         "base_cost": 0,
         "category": "DIP",
-        "image": "yearly_navy_tradition.png"
+        "image": "yearly_navy_tradition.png",
+        "name": "navy_tradition"
     },
     {
         "bonus": "Yearly navy tradition decay",
-        "per_level": "\u22120.5",
-        "cost_per_level": 0.0,
+        "per_level": "-0.5",
+        "cost_per_level": 15.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "yearly_navy_tradition_decay.png"
+        "image": "yearly_navy_tradition_decay.png",
+        "name": "navy_tradition_decay"
     },
     {
         "bonus": "Naval leader fire",
@@ -1950,7 +2106,8 @@
         "type": "absolute",
         "base_cost": 15,
         "category": "DIP",
-        "image": "naval_leader_fire.png"
+        "image": "naval_leader_fire.png",
+        "name": "leader_naval_fire"
     },
     {
         "bonus": "Naval leader shock",
@@ -1959,7 +2116,8 @@
         "type": "absolute",
         "base_cost": 15,
         "category": "DIP",
-        "image": "naval_leader_shock.png"
+        "image": "naval_leader_shock.png",
+        "name": "leader_naval_shock"
     },
     {
         "bonus": "Naval leader maneuver",
@@ -1968,538 +2126,598 @@
         "type": "absolute",
         "base_cost": 15,
         "category": "DIP",
-        "image": "naval_leader_maneuver.png"
+        "image": "naval_leader_maneuver.png",
+        "name": "leader_naval_manuever"
     },
     {
         "bonus": "Spy network construction",
         "per_level": "+10.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "spy_network_construction.png"
+        "image": "spy_network_construction.png",
+        "name": "spy_offence"
     },
     {
         "bonus": "Foreign spy detection",
         "per_level": "+10.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "foreign_spy_detection.png"
+        "image": "foreign_spy_detection.png",
+        "name": "global_spy_defence"
     },
     {
         "bonus": "Shipbuilding time",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "shipbuilding_time.png"
+        "image": "shipbuilding_time.png",
+        "name": "global_ship_recruit_speed"
     },
     {
         "bonus": "Blockade efficiency",
         "per_level": "+10.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "blockade_efficiency.png"
+        "image": "blockade_efficiency.png",
+        "name": "blockade_efficiency"
     },
     {
         "bonus": "Embargo efficiency",
         "per_level": "+10.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "embargo_efficiency.png"
+        "image": "embargo_efficiency.png",
+        "name": "embargo_efficiency"
     },
     {
         "bonus": "Prestige from naval battles",
         "per_level": "+25.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "prestige_from_naval_battles.png"
+        "image": "prestige_from_naval_battles.png",
+        "name": "prestige_from_naval"
     },
     {
         "bonus": "Colonial range",
         "per_level": "+10.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "colonial_range.png"
+        "image": "colonial_range.png",
+        "name": "range"
     },
     {
         "bonus": "Global settler increase",
         "per_level": "+5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "absolute",
         "base_cost": 0,
         "category": "DIP",
-        "image": "global_settler_increase.png"
+        "image": "global_settler_increase.png",
+        "name": "global_colonial_growth"
     },
     {
         "bonus": "Aggressive expansion impact",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "aggressive_expansion_impact.png"
+        "image": "aggressive_expansion_impact.png",
+        "name": "ae_impact"
     },
     {
         "bonus": "Privateer efficiency",
         "per_level": "+7.5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "privateer_efficiency.png"
+        "image": "privateer_efficiency.png",
+        "name": "privateer_efficiency"
     },
     {
         "bonus": "Diplomatic annexation cost",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "diplomatic_annexation_cost.png"
+        "image": "diplomatic_annexation_cost.png",
+        "name": "diplomatic_annexation_cost"
     },
     {
         "bonus": "Heavy ship cost",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "heavy_ship_cost.png"
+        "image": "heavy_ship_cost.png",
+        "name": "heavy_ship_cost"
     },
     {
         "bonus": "Light ship cost",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "light_ship_cost.png"
+        "image": "light_ship_cost.png",
+        "name": "light_ship_cost"
     },
     {
         "bonus": "Galley cost",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "galley_cost.png"
+        "image": "galley_cost.png",
+        "name": "galley_cost"
     },
     {
         "bonus": "Transport cost",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "transport_cost.png"
+        "image": "transport_cost.png",
+        "name": "transport_cost"
     },
     {
         "bonus": "Heavy ship combat ability",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "heavy_ship_combat_ability.png"
+        "image": "heavy_ship_combat_ability.png",
+        "name": "heavy_ship_power"
     },
     {
         "bonus": "Light ship combat ability",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "light_ship_combat_ability.png"
+        "image": "light_ship_combat_ability.png",
+        "name": "light_ship_power"
     },
     {
         "bonus": "Galley combat ability",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "galley_combat_ability.png"
+        "image": "galley_combat_ability.png",
+        "name": "galley_power"
     },
     {
         "bonus": "Diplomatic free policies",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 30,
         "type": "absolute",
         "base_cost": 30,
         "category": "DIP",
-        "image": "diplomatic_free_policies.png"
+        "image": "diplomatic_free_policies.png",
+        "name": "free_dip_policy"
     },
     {
         "bonus": "Diplomatic possible policies",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 30,
         "type": "absolute",
         "base_cost": 30,
         "category": "DIP",
-        "image": "diplomatic_possible_policies.png"
+        "image": "diplomatic_possible_policies.png",
+        "name": "possible_dip_policy"
     },
     {
         "bonus": "Transport combat ability",
         "per_level": "+10",
-        "cost_per_level": 0.0,
+        "cost_per_level": 1.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "transport_combat_ability.png"
+        "image": "transport_combat_ability.png",
+        "name": "transport_power"
     },
     {
         "bonus": "Ship disengagement chance",
         "per_level": "+5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "ship_disengagement_chance.png"
+        "image": "ship_disengagement_chance.png",
+        "name": "disengagement_chance"
     },
     {
         "bonus": "Yearly karma decay",
-        "per_level": "+0.05[1]",
-        "cost_per_level": 0.0,
+        "per_level": "+0.05",
+        "cost_per_level": 3.0,
         "type": "absolute",
         "base_cost": 0,
         "category": "DIP",
-        "image": "yearly_karma_decay.png"
+        "image": "yearly_karma_decay.png",
+        "name": "karma_decay"
     },
     {
         "bonus": "National sailors modifier",
         "per_level": "+10.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "national_sailors_modifier.png"
+        "image": "national_sailors_modifier.png",
+        "name": "global_sailors_modifier"
     },
     {
         "bonus": "Sailor recovery speed",
         "per_level": "+5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "sailor_recovery_speed.png"
+        "image": "sailor_recovery_speed.png",
+        "name": "sailors_recovery_speed"
     },
     {
         "bonus": "May raid coasts",
         "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
+        "cost_per_level": 20,
+        "type": "binary",
         "base_cost": 20,
         "category": "DIP",
-        "image": "may_raid_coasts.png"
+        "image": "may_raid_coasts.png",
+        "name": "may_perform_slave_raid"
     },
     {
         "bonus": "Warscore cost vs other religions",
-        "per_level": "\u221212.5",
+        "per_level": "-12.5",
         "cost_per_level": 10.0,
         "type": "percentage",
         "base_cost": 5,
         "category": "DIP",
-        "image": "warscore_cost_vs_other_religions.png"
+        "image": "warscore_cost_vs_other_religions.png",
+        "name": "warscore_cost_vs_other_religion"
     },
     {
         "bonus": "War taxes cost",
-        "per_level": "\u221250",
+        "per_level": "-50",
         "cost_per_level": 10.0,
         "type": "percentage",
         "base_cost": 10,
         "category": "DIP",
-        "image": "war_taxes_cost.png"
+        "image": "war_taxes_cost.png",
+        "name": "war_taxes_cost_modifier"
     },
     {
         "bonus": "Monarch diplomatic skill",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 45,
         "type": "absolute",
         "base_cost": 45,
         "category": "DIP",
-        "image": "monarch_diplomatic_skill.png"
+        "image": "monarch_diplomatic_skill.png",
+        "name": "monarch_diplomatic_power"
     },
     {
         "bonus": "Liberty desire from subject development",
-        "per_level": "\u221210",
-        "cost_per_level": 0.0,
+        "per_level": "-10",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "liberty_desire_from_subject_development.png"
+        "image": "liberty_desire_from_subject_development.png",
+        "name": "liberty_desire_from_subject_development"
     },
     {
         "bonus": "Liberty desire in same continent subjects",
-        "per_level": "\u221210",
-        "cost_per_level": 0.0,
+        "per_level": "-10",
+        "cost_per_level": 10.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "liberty_desire_in_same_continent_subjects.png"
+        "image": "liberty_desire_in_same_continent_subjects.png",
+        "name": "reduced_liberty_desire_on_same_continent"
     },
     {
         "bonus": "Naval tradition from battles",
         "per_level": "+50.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "naval_tradition_from_battles.png"
+        "image": "naval_tradition_from_battles.png",
+        "name": "naval_tradition_from_battle"
     },
     {
         "bonus": "Chance to capture enemy ships",
         "per_level": "+10.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "chance_to_capture_enemy_ships.png"
+        "image": "chance_to_capture_enemy_ships.png",
+        "name": "capture_ship_chance"
     },
     {
         "bonus": "Morale hit when losing a ship",
-        "per_level": "\u221210.0",
-        "cost_per_level": 0.0,
+        "per_level": "-10.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "morale_hit_when_losing_a_ship.png"
+        "image": "morale_hit_when_losing_a_ship.png",
+        "name": "sunk_ship_morale_hit_recieved"
     },
     {
         "bonus": "Global naval engagement",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "global_naval_engagement.png"
+        "image": "global_naval_engagement.png",
+        "name": "global_naval_engagement_modifier"
     },
     {
         "bonus": "Ship trade power",
         "per_level": "+10.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "ship_trade_power.png"
+        "image": "ship_trade_power.png",
+        "name": "global_ship_trade_power"
     },
     {
         "bonus": "Native assimilation",
         "per_level": "+15.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "native_assimilation.png"
+        "image": "native_assimilation.png",
+        "name": "native_assimilation"
     },
     {
         "bonus": "Native uprising chance",
-        "per_level": "\u221225.0",
-        "cost_per_level": 0.0,
+        "per_level": "-25.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "native_uprising_chance.png"
+        "image": "native_uprising_chance.png",
+        "name": "native_uprising_chance"
     },
     {
         "bonus": "Liberty desire in subjects",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "liberty_desire_in_subjects.png"
+        "image": "liberty_desire_in_subjects.png",
+        "name": "reduced_liberty_desire"
     },
     {
         "bonus": "Envoy travel time",
-        "per_level": "\u221210.0",
-        "cost_per_level": 0.0,
+        "per_level": "-10.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "envoy_travel_time.png"
+        "image": "envoy_travel_time.png",
+        "name": "envoy_travel_time"
     },
     {
         "bonus": "Province warscore cost",
-        "per_level": "\u221212.5",
+        "per_level": "-12.5",
         "cost_per_level": 10.0,
         "type": "percentage",
         "base_cost": 15,
         "category": "DIP",
-        "image": "province_warscore_cost.png"
+        "image": "province_warscore_cost.png",
+        "name": "province_warscore_cost"
     },
     {
         "bonus": "Diplomatic technology cost",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 20.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "diplomatic_technology_cost.png"
+        "image": "diplomatic_technology_cost.png",
+        "name": "dip_tech_cost_modifier"
     },
     {
         "bonus": "Yearly papal influence",
         "per_level": "+1",
-        "cost_per_level": 0.0,
+        "cost_per_level": 20.0,
         "type": "absolute",
         "base_cost": 0,
         "category": "DIP",
-        "image": "yearly_papal_influence.png"
+        "image": "yearly_papal_influence.png",
+        "name": "papal_influence"
     },
     {
         "bonus": "Trade range",
         "per_level": "+20.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "trade_range.png"
+        "image": "trade_range.png",
+        "name": "trade_range_modifier"
     },
     {
         "bonus": "Automatically discover adjacent when a colony is built",
         "per_level": "Yes",
-        "cost_per_level": 0.0,
-        "type": "absolute",
+        "cost_per_level": 0,
+        "type": "binary",
         "base_cost": 0,
         "category": "DIP",
-        "image": "automatically_discover_adjacent_when_a_colony_is_built.png"
+        "image": "automatically_discover_adjacent_when_a_colony_is_built.png",
+        "name": "auto_explore_adjacent_to_colony"
     },
     {
         "bonus": "Unjustified demands",
-        "per_level": "\u221210.0",
-        "cost_per_level": 0.0,
+        "per_level": "-10.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "unjustified_demands.png"
+        "image": "unjustified_demands.png",
+        "name": "unjustified_demands"
     },
     {
         "bonus": "Rebel support efficiency",
         "per_level": "+20.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "rebel_support_efficiency.png"
+        "image": "rebel_support_efficiency.png",
+        "name": "rebel_support_efficiency"
     },
     {
         "bonus": "Merchant trade power",
         "per_level": "+5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 10.0,
         "type": "absolute",
         "base_cost": 0,
         "category": "DIP",
-        "image": "merchant_trade_power.png"
+        "image": "merchant_trade_power.png",
+        "name": "placed_merchant_power"
     },
     {
         "bonus": "Domestic trade power",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "domestic_trade_power.png"
+        "image": "domestic_trade_power.png",
+        "name": "global_own_trade_power"
     },
     {
         "bonus": "Recover navy morale speed",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "recover_navy_morale_speed.png"
+        "image": "recover_navy_morale_speed.png",
+        "name": "recover_navy_morale_speed"
     },
     {
         "bonus": "Trade power abroad",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "trade_power_abroad.png"
+        "image": "trade_power_abroad.png",
+        "name": "global_foreign_trade_power"
     },
     {
         "bonus": "Improve relations",
         "per_level": "+5.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "improve_relations.png"
+        "image": "improve_relations.png",
+        "name": "improve_relation_modifier"
     },
     {
         "bonus": "Possible condottieri",
         "per_level": "+25.0",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "possible_condottieri.png"
+        "image": "possible_condottieri.png",
+        "name": "possible_condottieri"
     },
     {
         "bonus": "Naval attrition",
-        "per_level": "\u221210.0",
-        "cost_per_level": 0.0,
+        "per_level": "-10.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "naval_attrition.png"
+        "image": "naval_attrition.png",
+        "name": "naval_attrition"
     },
     {
         "bonus": "Power projection from insults",
         "per_level": "+100",
-        "cost_per_level": null,
+        "cost_per_level": 10,
         "type": "percentage",
         "base_cost": 10,
         "category": "DIP",
-        "image": "power_projection_from_insults.png"
+        "image": "power_projection_from_insults.png",
+        "name": "power_projection_from_insults"
     },
     {
         "bonus": "Can fabricate claim overseas in colonial regions",
         "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
+        "cost_per_level": 35,
+        "type": "binary",
         "base_cost": 35,
         "category": "DIP",
-        "image": "can_fabricate_claim_overseas_in_colonial_regions.png"
+        "image": "can_fabricate_claim_overseas_in_colonial_regions.png",
+        "name": "can_fabricate_claim_overseas_in_colonial_regions"
     },
     {
         "bonus": "Cost to justify trade conflict",
-        "per_level": "\u221217.5",
-        "cost_per_level": 0.0,
+        "per_level": "-17.5",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "cost_to_justify_trade_conflict.png"
+        "image": "cost_to_justify_trade_conflict.png",
+        "name": "justify_trade_conflict_cost"
     },
     {
         "bonus": "Cost to fabricate claims",
-        "per_level": "\u221217.5",
-        "cost_per_level": 0.0,
+        "per_level": "-17.5",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "cost_to_fabricate_claims.png"
+        "image": "cost_to_fabricate_claims.png",
+        "name": "fabricate_claims_cost"
     },
     {
         "bonus": "Sailor maintenance",
         "per_level": "-10",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "sailor_maintenance.png"
+        "image": "sailor_maintenance.png",
+        "name": "sailor_maintenance_modifer"
     },
     {
         "bonus": "Naval combat bonus off owned coast",
@@ -2508,258 +2726,277 @@
         "type": "absolute",
         "base_cost": 10,
         "category": "DIP",
-        "image": "naval_combat_bonus_off_owned_coast.png"
+        "image": "naval_combat_bonus_off_owned_coast.png",
+        "name": "own_coast_naval_combat_bonus"
     },
     {
         "bonus": "May establish Siberian frontiers",
         "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
+        "cost_per_level": 200,
+        "type": "binary",
         "base_cost": 200,
         "category": "DIP",
-        "image": "may_establish_siberian_frontiers.png"
+        "image": "may_establish_siberian_frontiers.png",
+        "name": "may_establish_frontier"
     },
     {
         "bonus": "Burghers loyalty equilibrium",
         "per_level": "+5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "burghers_loyalty_equilibrium.png"
+        "image": "burghers_loyalty_equilibrium.png",
+        "name": "burghers_loyalty_modifier"
     },
     {
         "bonus": "Vaishyas loyalty equilibrium",
         "per_level": "+5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "vaishyas_loyalty_equilibrium.png"
+        "image": "vaishyas_loyalty_equilibrium.png",
+        "name": "vaishyas_loyalty_modifier"
     },
     {
         "bonus": "Marines force limit",
         "per_level": "+25",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "marines_force_limit.png"
+        "image": "marines_force_limit.png",
+        "name": "allowed_marine_fraction"
     },
     {
         "bonus": "Cost to promote mercantilism",
-        "per_level": "\u22125",
-        "cost_per_level": 0.0,
+        "per_level": "-5",
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "cost_to_promote_mercantilism.png"
+        "image": "cost_to_promote_mercantilism.png",
+        "name": "cost_to_promote_mercantilism"
     },
     {
         "bonus": "Trade company investment cost",
-        "per_level": "\u221215",
-        "cost_per_level": 0.0,
+        "per_level": "-15",
+        "cost_per_level": 20.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "trade_company_investment_cost.png"
+        "image": "trade_company_investment_cost.png",
+        "name": "trade_company_investment_cost"
     },
     {
         "bonus": "Admiral cost",
-        "per_level": "\u221225",
+        "per_level": "-25",
         "cost_per_level": 15.0,
         "type": "percentage",
         "base_cost": 15,
         "category": "DIP",
-        "image": "admiral_cost.png"
+        "image": "admiral_cost.png",
+        "name": "admiral_cost"
     },
     {
         "bonus": "Naval barrage cost",
-        "per_level": "\u221215",
-        "cost_per_level": 0.0,
+        "per_level": "-15",
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "naval_barrage_cost.png"
+        "image": "naval_barrage_cost.png",
+        "name": "naval_barrage_cost"
     },
     {
         "bonus": "Vassalization acceptance",
         "per_level": "+15",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "absolute",
         "base_cost": 0,
         "category": "DIP",
-        "image": "vassalization_acceptance.png"
+        "image": "vassalization_acceptance.png",
+        "name": "accept_vassalization_reasons"
     },
     {
         "bonus": "Transfer trade acceptance",
         "per_level": "+25",
-        "cost_per_level": 0.0,
+        "cost_per_level": 5.0,
         "type": "absolute",
         "base_cost": 0,
         "category": "DIP",
-        "image": "transfer_trade_acceptance.png"
+        "image": "transfer_trade_acceptance.png",
+        "name": "transfer_trade_acceptance"
     },
     {
         "bonus": "Monthly diplomatic power",
         "per_level": "+1",
-        "cost_per_level": null,
+        "cost_per_level": 60,
         "type": "absolute",
         "base_cost": 60,
         "category": "DIP",
-        "image": "monthly_diplomatic_power.png"
+        "image": "monthly_diplomatic_power.png",
+        "name": "country_diplomatic_power"
     },
     {
         "bonus": "Covert action relation impact",
-        "per_level": "\u221225",
-        "cost_per_level": 0.0,
+        "per_level": "-25",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "covert_action_relation_impact.png"
+        "image": "covert_action_relation_impact.png",
+        "name": "covert_action_relation_impact"
     },
     {
         "bonus": "Center of trade upgrade cost",
-        "per_level": "\u221210",
-        "cost_per_level": 0.0,
+        "per_level": "-10",
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "center_of_trade_upgrade_cost.png"
+        "image": "center_of_trade_upgrade_cost.png",
+        "name": "center_of_trade_upgrade_cost"
     },
     {
         "bonus": "May raid coasts, including coasts of countries with same religion",
         "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
+        "cost_per_level": 40,
+        "type": "binary",
         "base_cost": 40,
         "category": "DIP",
-        "image": "may_raid_coasts,_including_coasts_of_countries_with_same_religion.png"
+        "image": "may_perform_slave_raid_on_same_religion.png",
+        "name": "may_perform_slave_raid_on_same_religion"
     },
     {
         "bonus": "Ship tradepower propagation",
         "per_level": "+10",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "ship_tradepower_propagation.png"
+        "image": "ship_tradepower_propagation.png",
+        "name": "global_ship_trade_power"
     },
     {
         "bonus": "Expel minorities cost",
-        "per_level": "\u221210",
-        "cost_per_level": 0.0,
+        "per_level": "-10",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "expel_minorities_cost.png"
+        "image": "expel_minorities_cost.png",
+        "name": "expel_minorities_cost"
     },
     {
         "bonus": "Settler chance",
         "per_level": "+5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "settler_chance.png"
-    },
-    {
-        "bonus": "Expel minorities cost",
-        "per_level": "\u221210",
-        "cost_per_level": 0.0,
-        "type": "percentage",
-        "base_cost": 0,
-        "category": "DIP",
-        "image": "expel_minorities_cost.png"
+        "image": "settler_chance.png",
+        "name": "colonist_placement_chance"
     },
     {
         "bonus": "Appoint cardinal cost",
-        "per_level": "\u221225",
+        "per_level": "-25",
         "cost_per_level": 10.0,
         "type": "percentage",
         "base_cost": 10,
         "category": "DIP",
-        "image": "appoint_cardinal_cost.png"
+        "image": "appoint_cardinal_cost.png",
+        "name": "appoint_cardinal_cost"
     },
     {
         "bonus": "Cost of enforcing religion through war",
-        "per_level": "\u221225",
-        "cost_per_level": 0.0,
+        "per_level": "-25",
+        "cost_per_level": 5.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "cost_of_enforcing_religion_through_war.png"
+        "image": "cost_of_enforcing_religion_through_war.png",
+        "name": "cost_of_enforcing_religion_through_war"
     },
     {
         "bonus": "Promote culture cost",
-        "per_level": "\u221210",
-        "cost_per_level": 0.0,
+        "per_level": "-10",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "promote_culture_cost.png"
+        "image": "promote_culture_cost.png",
+        "name": "promote_culture_cost"
     },
     {
         "bonus": "Change rival cost",
-        "per_level": "\u221225",
-        "cost_per_level": 0.0,
+        "per_level": "-25",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "change_rival_cost.png"
+        "image": "change_rival_cost.png",
+        "name": "change_rival_cost"
     },
     {
         "bonus": "Global ship repair",
         "per_level": "+10",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "global_ship_repair.png"
+        "image": "global_ship_repair.png",
+        "name": "global_ship_repair"
     },
     {
         "bonus": "Ship costs",
-        "per_level": "\u22125.0",
-        "cost_per_level": 0.0,
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "ship_costs.png"
+        "image": "ship_costs.png",
+        "name": "global_ship_cost"
     },
     {
         "bonus": "Lowered impact on stability from diplomatic actions",
         "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
+        "cost_per_level": 35,
+        "type": "binary",
         "base_cost": 35,
         "category": "DIP",
-        "image": "lowered_impact_on_stability_from_diplomatic_actions.png"
+        "image": "lowered_impact_on_stability_from_diplomatic_actions.png",
+        "name": "reduced_stab_impacts"
     },
     {
         "bonus": "Allows recruitment of explorers & conquistadors.",
         "per_level": "Yes",
-        "cost_per_level": null,
-        "type": "absolute",
+        "cost_per_level": 40,
+        "type": "binary",
         "base_cost": 40,
         "category": "DIP",
-        "image": "allows_recruitment_of_explorers_&_conquistadors..png"
+        "image": "may_explore.png",
+        "name": "may_explore"
     },
     {
         "bonus": "Monthly favor growth modifier",
         "per_level": "+5",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
-        "image": "monthly_favor_growth_modifier.png"
+        "image": "monthly_favor_growth_modifier.png",
+        "name": "monthly_favor_growth_modifier"
     },
     {
         "bonus": "Fleet movement speed",
         "per_level": "+1",
-        "cost_per_level": 0.0,
+        "cost_per_level": 3.0,
         "type": "absolute",
         "base_cost": 0,
         "category": "DIP",
-        "image": "fleet_movement_speed.png"
+        "image": "fleet_movement_speed.png",
+        "name": "movement_speed_in_fleet_modifier"
     }
 ]

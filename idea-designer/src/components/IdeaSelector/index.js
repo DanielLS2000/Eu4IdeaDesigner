@@ -3,7 +3,7 @@ import IdeaRow from '../IdeaRow'
 import './IdeaSelector.css'
 
 const IdeaSelector = () => {
-    const {ideaSet} = useIdeaSetContext();
+    const {ideaSet, getTotalCost} = useIdeaSetContext();
 
     const traditions = ideaSet.slice(0,2);
     const ideas = ideaSet.slice(2,9);
@@ -33,9 +33,9 @@ const IdeaSelector = () => {
                     <h2>Ideas</h2>
                 </div>
                 {/* Ideas */}
-                {/* <div className='ideaList'>
-                    {ideaSet.map((idea, index) => (
-                        <IdeaRow idea={idea} key={index} id={index}/>
+                <div className='ideaList'>
+                    {ideas.map((idea, index) => (
+                        <IdeaRow idea={idea} key={index} id={index + 2}/>
                     ))}
                 </div>
             </div>
@@ -45,11 +45,9 @@ const IdeaSelector = () => {
                     <h2>Ambition</h2>
                 </div>
                 {/* Ambition */}
-                {/* <div className='ideaList'>
-                    {ideaSet.map((idea, index) => (
-                        <IdeaRow idea={idea} key={index} id={index}/>
-                    ))}
-                </div> */}
+                <div className='ideaList'>
+                    <IdeaRow idea={ambition[0]} id={9}/>
+                </div>
             </div>
         </div>
     )

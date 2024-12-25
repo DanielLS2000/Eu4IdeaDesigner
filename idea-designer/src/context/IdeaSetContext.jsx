@@ -1,16 +1,10 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-class IdeaSlot {
-  constructor(id) {
-    this.id = id
-    this.ideas = []
-  }
-}
-
 class Idea {
-  constructor(id, name, bonus_per_level, cost_per_level, type, base_cost, category, image) {
+  constructor(id, name, level, bonus_per_level, cost_per_level, type, base_cost, category, image) {
     this.id = id;
     this.name = name;
+    this.level = level;
     this.bonus_per_level = bonus_per_level;
     this.cost_per_level = cost_per_level;
     this.type = type;
@@ -18,10 +12,87 @@ class Idea {
     this.category = category;
     this.image = image;
   }
+
+  updateDetails(ideasData){
+
+    if (ideasData.bonus != undefined) this.name = ideasData.bonus;
+    if (ideasData.per_level != undefined) this.bonus_per_level = parseFloat(ideasData.per_level);
+    if (ideasData.cost_per_level != undefined) this.cost_per_level = parseInt(ideasData.cost_per_level);
+    if (ideasData.type != undefined) this.type = ideasData.type;
+    if (ideasData.base_cost != undefined) this.base_cost = parseInt(ideasData.base_cost);
+    if (ideasData.category != undefined) this.category = ideasData.category;
+    if (ideasData.image != undefined) this.image = ideasData.image;
+  }
+
+  getCost(){
+    var multiplier = 0;
+    switch (this.id){
+      case 0:
+        multiplier = 2;
+        break;
+      case 1:
+        multiplier = 2;
+        break;
+      case 2:
+        multiplier = 2;
+        break;
+      case 3:
+        multiplier = 1.8;
+        break;
+      case 4:
+        multiplier = 1.6;
+        break;
+      case 5:
+        multiplier = 1.4;
+        break;
+      case 6:
+        multiplier = 1.2;
+        break;
+      case 7:
+        multiplier = 1;
+        break;
+      case 8:
+        multiplier = 1;
+        break;
+      case 9:
+        multiplier = 1;
+    }
+    var level = this.level;
+    var cost = this.base_cost;
+    while (level > 1) {
+      level -= 1;
+      cost += this.cost_per_level * level;
+    }
+    return (cost * multiplier);
+  }
+
+  getBonus(){
+    var bonus;
+    if (this.type == "percentage"){
+      if (this.bonus_per_level < 0){
+        bonus = `${this.bonus_per_level * this.level}%`;
+      } else {
+        bonus = `+${this.bonus_per_level * this.level}%`;
+      }
+    } else if (this.type == "absolute"){
+      if (this.bonus_per_level < 0){
+        bonus = `${this.bonus_per_level * this.level}`;
+      } else {
+        bonus = `+${this.bonus_per_level * this.level}`;
+      }
+    } else {
+      bonus = "yes"
+    }
+    
+    return bonus;
+  }
+
+  updateLevel(num) {
+    if (num > 0){
+      this.level = num;
+    }
+  }
 }
-     
-
-
 
 const IdeaSetContext = createContext();
 
@@ -29,86 +100,73 @@ export const useIdeaSetContext = () => useContext(IdeaSetContext);
 
 export const IdeaSetProvider = ({children}) => {
     const [ideaSet, setIdeaSet] = useState([
-      [{
-        "id": 0,
-        "name": "Tradition 1",
-        "cost": 40,
-        "bonus": 10,
-        "level": 1
-      }],
-      [{
-        "id": 1,
-        "name": "Tradition 2",
-        "cost": 40,
-        "bonus": 10,
-        "level": 1
-      }],
-      [{
-        "id": 2,
-        "name": "Idea 1",
-        "cost": 40,
-        "bonus": 10,
-        "level": 1
-      }],
-      [{
-        "id": 3,
-        "name": "Ideia 2",
-        "cost": 40,
-        "bonus": 10,
-        "level": 1
-      }],
-      [{
-        "id": 4,
-        "name": "Ideia 3",
-        "cost": 40,
-        "bonus": 10,
-        "level": 1
-      }],
-      [{
-        "id": 5,
-        "name": "Ideia 4",
-        "cost": 40,
-        "bonus": 10,
-        "level": 1
-      }],
-      [{
-        "id": 6,
-        "name": "Ideia 5",
-        "cost": 40,
-        "bonus": 10,
-        "level": 1
-      }],
-      [{
-        "id": 7,
-        "name": "Ideia 6",
-        "cost": 40,
-        "bonus": 10,
-        "level": 1
-      }],
-      [{
-        "id": 8,
-        "name": "Ideia 7",
-        "cost": 40,
-        "bonus": 10,
-        "level": 1
-      }], 
-      [{
-        "id": 9,
-        "name": "Ambition",
-        "cost": 40,
-        "bonus": 10,
-        "level": 1
-      }]
+      [new Idea(0, "Tradition 1", 1, 5, 3, "percentage", 0, "ADM", "default_idea.png")],
+      [new Idea(1, "Tradition 2", 1, 5, 3, "percentage", 0, "ADM", "default_idea.png")],
+      [new Idea(2, "Idea 1", 1, 5, 3, "percentage", 0, "ADM", "default_idea.png")],
+      [new Idea(3, "Idea 2", 1, 5, 3, "percentage", 0, "ADM", "default_idea.png")],
+      [new Idea(4, "Idea 3", 1, 5, 3, "percentage", 0, "ADM", "default_idea.png")],
+      [new Idea(5, "Idea 4", 1, 5, 3, "percentage", 0, "ADM", "default_idea.png")],
+      [new Idea(6, "Idea 5", 1, 5, 3, "percentage", 0, "ADM", "default_idea.png")],
+      [new Idea(7, "Idea 6", 1, 5, 3, "percentage", 0, "ADM", "default_idea.png")],
+      [new Idea(8, "Idea 7", 1, 5, 3, "percentage", 0, "ADM", "default_idea.png")], 
+      [new Idea(9, "Ambition 1", 1, 5, 3, "percentage", 0, "ADM", "default_idea.png")]
     ]);
     const [ideas, setIdeas] = useState([]);
     const [loading, setLoading] = useState(true); // Estado de carregamento
 
     const updateIdea = (id, updatedItem) => {
-      updatedItem = [updatedItem]
       setIdeaSet((prevList) =>
-        prevList.map((item, i) => (i === id ? { ...item, ...updatedItem } : item))
+        prevList.map((item, index) => {
+          // Item encontrado no IdeaSet
+          if (index === (id)) {
+            var idea = []
+            // Se houverem mais itens armazenados que novos reseta tudo
+            if (item.length > updatedItem.length){
+              item = []
+            }
+            // Adicionar Items a lista 
+            for(var i=0;i<updatedItem.length;i++){
+              if (item[i] == undefined){
+                item.push(new Idea(id, "placeholder", 1, 3, 5, "percentage", 3, "ADM", "default.png"))
+              }
+              idea = idea.concat(item[i])
+              idea[i].updateDetails(updatedItem[i])
+            }
+            return idea;
+          }
+          return item;
+        })
       );
     };
+
+    const updateLevel = (id, num, selectedIdea) => {
+      setIdeaSet((prevList) =>
+        prevList.map((item, index) => {
+          if (index === id) {
+            const idea = item; // Pega a ideia na lista
+            idea[selectedIdea].updateLevel(num); // Atualiza a ideia usando o método da classe
+            
+            return idea;
+          }
+          return item;
+        })
+      );
+    }
+
+    const getTotalCost = () => {
+      var totalCost = 0;
+      ideaSet.forEach(ideaSlot => {
+        if (ideaSlot !== undefined){
+          ideaSlot.forEach(idea => {
+            if (idea != undefined){
+              totalCost += idea.getCost()
+            }
+          })
+        }
+      })
+
+      return totalCost;
+    }
 
     useEffect(() => {
         const fetchData = async () => {
@@ -127,7 +185,7 @@ export const IdeaSetProvider = ({children}) => {
       }, []);
 
     return (
-        <IdeaSetContext.Provider value={{ideaSet, ideas, updateIdea}}>
+        <IdeaSetContext.Provider value={{ideaSet, ideas, updateIdea, updateLevel, getTotalCost}}>
             {children}
         </IdeaSetContext.Provider>
     );
