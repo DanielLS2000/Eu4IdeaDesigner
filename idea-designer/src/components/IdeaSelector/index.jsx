@@ -1,9 +1,32 @@
 import { useIdeaSetContext } from "@/context/IdeaSetContext";
 import IdeaRow from "../IdeaRow";
 import "./IdeaSelector.css";
+import { useEffect } from "react";
 
 const IdeaSelector = () => {
-  const { ideaSet } = useIdeaSetContext();
+  const { ideaSet, setIdeaSet, Idea} = useIdeaSetContext();
+
+  useEffect(() => {
+    const savedIdeaSet = localStorage.getItem("ideaSet");
+    if (savedIdeaSet) {
+      setIdeaSet(JSON.parse(savedIdeaSet).map(slot =>
+        slot.map(
+          idea =>
+            new Idea(
+              idea.id,
+              idea.name,
+              idea.level,
+              idea.bonus_per_level,
+              idea.cost_per_level,
+              idea.type,
+              idea.base_cost,
+              idea.category,
+              idea.image
+            )
+        )
+      ));
+    }
+  }, []);
 
   // Dividindo o conjunto de ideias em categorias
   const traditions = ideaSet.slice(0, 2);

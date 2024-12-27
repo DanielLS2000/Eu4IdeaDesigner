@@ -2,10 +2,14 @@ import { useEffect, useState } from "react";
 import "./SlotName.css";
 
 const SlotName = ({id, image}) => {
-    const [slotName, setSlotName] = useState(() => {
+    const [slotName, setSlotName] = useState(`Idea ${id}`);
+
+    useEffect(() => {
         const savedValue = localStorage.getItem(`slotName-${id}`);
-        return savedValue || `Idea ${id}`;
-    });
+        if (savedValue) {
+            setSlotName(savedValue)
+        }
+    }, [])
 
     useEffect(() => {
     localStorage.setItem(`slotName-${id}`, slotName);

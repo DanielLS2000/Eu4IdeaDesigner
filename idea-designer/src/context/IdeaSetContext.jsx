@@ -104,39 +104,18 @@ const IdeaSetContext = createContext();
 export const useIdeaSetContext = () => useContext(IdeaSetContext);
 
 export const IdeaSetProvider = ({children}) => {
-    const [ideaSet, setIdeaSet] = useState(() => {
-      const savedIdeaSet = localStorage.getItem("ideaSet");
-      if (savedIdeaSet) {
-        return JSON.parse(savedIdeaSet).map(slot =>
-          slot.map(
-            idea =>
-              new Idea(
-                idea.id,
-                idea.name,
-                idea.level,
-                idea.bonus_per_level,
-                idea.cost_per_level,
-                idea.type,
-                idea.base_cost,
-                idea.category,
-                idea.image
-              )
-          )
-        );
-      }
-      return [
-        [new Idea(0, "Tradition 1", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
-        [new Idea(1, "Tradition 2", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
-        [new Idea(2, "Idea 1", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
-        [new Idea(3, "Idea 2", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
-        [new Idea(4, "Idea 3", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
-        [new Idea(5, "Idea 4", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
-        [new Idea(6, "Idea 5", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
-        [new Idea(7, "Idea 6", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
-        [new Idea(8, "Idea 7", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
-        [new Idea(9, "Ambition 1", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
-      ];
-    });
+    const [ideaSet, setIdeaSet] = useState([
+      [new Idea(0, "Tradition 1", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
+      [new Idea(1, "Tradition 2", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
+      [new Idea(2, "Idea 1", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
+      [new Idea(3, "Idea 2", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
+      [new Idea(4, "Idea 3", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
+      [new Idea(5, "Idea 4", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
+      [new Idea(6, "Idea 5", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
+      [new Idea(7, "Idea 6", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
+      [new Idea(8, "Idea 7", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
+      [new Idea(9, "Ambition 1", 1, 5, 3, "percentage", 0, "ADM", "unknown")],
+    ]);
     const [ideas, setIdeas] = useState([]);
     const [loading, setLoading] = useState(true); // Estado de carregamento
 
@@ -244,7 +223,7 @@ export const IdeaSetProvider = ({children}) => {
       }, []);
 
     return (
-        <IdeaSetContext.Provider value={{ideaSet, ideas, updateIdea, updateLevel, getTotalCost, getPercentages, loadIdeas}}>
+        <IdeaSetContext.Provider value={{ideaSet, setIdeaSet, ideas, Idea, updateIdea, updateLevel, getTotalCost, getPercentages, loadIdeas}}>
             {children}
         </IdeaSetContext.Provider>
     );
