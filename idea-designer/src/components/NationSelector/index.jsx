@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import './NationSelector.css'
+import "./NationSelector.css";
 
-const NationSelector = ({ options, onSelect, name}) => {
+const NationSelector = ({ options, onSelect, name }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -12,85 +12,45 @@ const NationSelector = ({ options, onSelect, name}) => {
 
   const handleSelect = (item) => {
     onSelect(item); // Chama a função passada como prop
-    setIsOpen(false); // Fecha o dropdown após selecionar
+    setSearchQuery(""); // Limpa o campo de pesquisa após selecionar
+    setIsOpen(false); // Fecha o dropdown
   };
 
   return (
-    <div style={{ position: "relative", display: "inline-block", width: "200px" }}>
+    <div className="nation-selector">
       {/* Botão para abrir o dropdown */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        style={{
-          width: "100%",
-          padding: "10px",
-          backgroundColor: "#007BFF",
-          color: "#fff",
-          border: "none",
-          borderRadius: "4px",
-          cursor: "pointer",
-        }}
-      >
-        Select {name}
+      <button className="nation-selector-button" onClick={() => setIsOpen(!isOpen)}>
+        Select {name} {isOpen ? "▲" : "▼"}
       </button>
 
       {/* Dropdown */}
       {isOpen && (
-        <div
-          style={{
-            position: "absolute",
-            top: "100%",
-            left: 0,
-            width: "100%",
-            maxHeight: "200px",
-            overflowY: "auto",
-            backgroundColor: "#fff",
-            border: "1px solid #ccc",
-            borderRadius: "4px",
-            zIndex: 1000,
-          }}
-        >
+        <div className="dropdown-container">
           {/* Campo de pesquisa */}
           <input
             type="text"
-            placeholder="Search..."
+            className="dropdown-search"
+            placeholder={`Search ${name}...`}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            style={{
-              width: "100%",
-              padding: "10px",
-              boxSizing: "border-box",
-              border: "none",
-              borderBottom: "1px solid #ccc",
-              color: "#000",
-            }}
           />
 
           {/* Lista de opções */}
-          {filteredOptions.map((option, index) => (
-            <div
-              key={index}
-              onClick={() => handleSelect(option)}
-              style={{
-                padding: "10px",
-                cursor: "pointer",
-                borderBottom: "1px solid #ccc",
-                backgroundColor: "#fff",
-                transition: "background-color 0.2s",
-                color: "#000",
-              }}
-              onMouseEnter={(e) => (e.target.style.backgroundColor = "#f0f0f0")}
-              onMouseLeave={(e) => (e.target.style.backgroundColor = "#fff")}
-            >
-              {option}
-            </div>
-          ))}
-
-          {/* Caso não haja itens */}
-          {filteredOptions.length === 0 && (
-            <div style={{ padding: "10px", textAlign: "center", color: "#999" }}>
-              No {name} Avaliable
-            </div>
-          )}
+          <div className="dropdown-options">
+            {filteredOptions.length > 0 ? (
+              filteredOptions.map((option, index) => (
+                <div
+                  key={index}
+                  className="dropdown-option"
+                  onClick={() => handleSelect(option)}
+                >
+                  {option}
+                </div>
+              ))
+            ) : (
+              <div className="dropdown-no-results">No {name} Available</div>
+            )}
+          </div>
         </div>
       )}
     </div>

@@ -1,10 +1,46 @@
-/* .titles {
+.ideaSelector {
     display: flex;
-    flex-direction: row;
-    font-weight: bold;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.ideaSelector {
-    width: 70%;
-} */
+.titles {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 2fr 2fr;
+    align-items: center;
+    gap: 10px;
+    /* background-color: #7a2222; */
+    border-radius: 4px;
+    width: 100%;
+    overflow: hidden;
+    height: 30px;
+}
+
+.titles .item {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
+    background-image: url("/images/red-banner.png");
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+}
+
+.ideaList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .titles {
+      grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas em telas menores */
+    }
+    .ideaRow {
+      grid-template-columns: repeat(3, 1fr); /* 3 colunas na linha */
+    }
+}
+

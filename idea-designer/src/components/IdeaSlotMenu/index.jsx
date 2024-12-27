@@ -1,69 +1,45 @@
 import React, { useState } from "react";
-import './IdeaSlotMenu.css'
+import "./IdeaSlotMenu.css";
 
-const IdeaSlotMenu = ({ options, onSelect, selectedIdea}) => {
+const IdeaSlotMenu = ({ options, onSelect, selectedIdea }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleSelect = (item) => {
-    const index = options.indexOf(item)
+    const index = options.indexOf(item);
     onSelect(index); // Chama a função passada como prop
     setIsOpen(false); // Fecha o dropdown após selecionar
   };
 
-
   return (
-    <div style={{ position: "relative", display: "inline-block", width: "200px" }}>
+    <div className="idea-slot" onClick={() => setIsOpen(!isOpen)}>
       {/* Botão para abrir o dropdown */}
       <button
-        onClick={() => setIsOpen(!isOpen)}
-        style={{
-          width: "100%",
-          padding: "10px",
-          backgroundColor: "#007BFF",
-          color: "#fff",
-          border: "none",
-          borderRadius: "4px",
-          cursor: "pointer",
-        }}
+        className="idea-slot-button"
       >
-        {options[selectedIdea].name}
+        <span className="line-idea">
+          <img src={`/images/${options[selectedIdea]?.category}.png`} alt="" className="idea-image" />
+          {options[selectedIdea]?.name || "Select Idea"}
+        </span>
       </button>
 
       {/* Dropdown */}
       {isOpen && (
-        <div
-          style={{
-            position: "absolute",
-            top: "100%",
-            left: 0,
-            width: "100%",
-            maxHeight: "200px",
-            overflowY: "auto",
-            backgroundColor: "#fff",
-            border: "1px solid #ccc",
-            borderRadius: "4px",
-            zIndex: 1000,
-          }}
-        >
-          {/* Lista de opções */}
+        <div className="dropdown-ideaslot ideaslot-options">
           {options.map((option, index) => (
             <div
               key={index}
+              className="ideaslot-option"
               onClick={() => handleSelect(option)}
-              style={{
-                padding: "10px",
-                cursor: "pointer",
-                borderBottom: "1px solid #ccc",
-                backgroundColor: "#fff",
-                transition: "background-color 0.2s",
-                color: "#000",
-              }}
-              onMouseEnter={(e) => (e.target.style.backgroundColor = "#f0f0f0")}
-              onMouseLeave={(e) => (e.target.style.backgroundColor = "#fff")}
             >
-              {option.name}
+              <span className="line-idea">
+                <img src={`/images/${option.category}.png`} alt="" className="idea-image" />
+                {option.name}
+              </span>
             </div>
           ))}
+          {options.length === 0 && (
+            <div className="dropdown-no-results">No Ideas Available</div>
+          )}
         </div>
       )}
     </div>

@@ -397,7 +397,7 @@
         "base_cost": "45",
         "category": "ADM",
         "image": "monarch_administrative_skill.png",
-        "name": "monarch_administrative_power"
+        "name": "monarch_admin_power"
     },
     {
         "bonus": "Maximum absolutism",
@@ -408,6 +408,16 @@
         "category": "ADM",
         "image": "maximum_absolutism.png",
         "name": "max_absolutism"
+    },
+    {
+        "bonus": "Max effect of absolutism",
+        "per_level": "+5",
+        "cost_per_level": 5.0,
+        "type": "absolute",
+        "base_cost": "0",
+        "category": "ADM",
+        "image": "max_absolutism_effect.png",
+        "name": "max_absolutism_effect"
     },
     {
         "bonus": "Yearly absolutism",
@@ -428,6 +438,16 @@
         "category": "ADM",
         "image": "administrative_efficiency.png",
         "name": "administrative_efficiency"
+    },
+    {
+        "bonus": "Overextension impact modifier",
+        "per_level": "+5.0",
+        "cost_per_level": 3.0,
+        "type": "percentage",
+        "base_cost": 0,
+        "category": "ADM",
+        "image": "overextension_impact_modifier.png",
+        "name": "overextension_impact_modifier"
     },
     {
         "bonus": "Institution spread",
@@ -602,7 +622,7 @@
     {
         "bonus": "Cost of advisors with ruler's culture",
         "per_level": "-5.0",
-        "cost_per_level": 1.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": "0",
         "category": "ADM",
@@ -944,7 +964,7 @@
         "per_level": "Yes",
         "cost_per_level": 35,
         "type": "binary",
-        "base_cost": "35",
+        "base_cost": 35,
         "category": "ADM",
         "image": "cb_on_primitives.png",
         "name": "cb_on_primitives"
@@ -1057,7 +1077,7 @@
         "base_cost": "0",
         "category": "ADM",
         "image": "all_estate_loyalty_equilibrium.png",
-        "name": "all_estate_loyalty_equilibrium'"
+        "name": "all_estate_loyalty_equilibrium"
     },
     {
         "bonus": "Morale of armies",
@@ -1207,7 +1227,7 @@
         "base_cost": 15,
         "category": "MIL",
         "image": "leader_land_maneuver.png",
-        "name": "leader_land_maneuver"
+        "name": "leader_land_manuever"
     },
     {
         "bonus": "Leader siege",
@@ -1288,6 +1308,16 @@
         "category": "MIL",
         "image": "cavalry_combat_ability.png",
         "name": "cavalry_power"
+    },
+    {
+        "bonus": "Can Recruit Hussars",
+        "per_level": "Yes",
+        "cost_per_level": 0,
+        "type": "binary",
+        "base_cost": 0,
+        "category": "MIL",
+        "image": "can_recruit_hussars.png",
+        "name": "can_recruit_hussars"
     },
     {
         "bonus": "Artillery combat ability",
@@ -1560,6 +1590,16 @@
         "name": "garrison_size"
     },
     {
+        "bonus": "Garrison damage",
+        "per_level": "+17.5",
+        "cost_per_level": 3.0,
+        "type": "percentage",
+        "base_cost": 0,
+        "category": "MIL",
+        "image": "garrison_damage.png",
+        "name": "garrison_damage"
+    },
+    {
         "bonus": "Land attrition",
         "per_level": "-10.0",
         "cost_per_level": 3.0,
@@ -1678,6 +1718,26 @@
         "category": "MIL",
         "image": "nobility_loyalty_equilibrium.png",
         "name": "nobles_loyalty_modifier"
+    },
+    {
+        "bonus": "Nobility influence",
+        "per_level": "-5",
+        "cost_per_level": 3.0,
+        "type": "percentage",
+        "base_cost": 0,
+        "category": "MIL",
+        "image": "nobles_influence_modifier.png",
+        "name": "nobles_influence_modifier"
+    },
+    {
+        "bonus": "Estate Loyalty change on privilege revoked",
+        "per_level": "+5",
+        "cost_per_level": 3.0,
+        "type": "percentage",
+        "base_cost": 0,
+        "category": "MIL",
+        "image": "loyalty_change_on_revoked.png",
+        "name": "loyalty_change_on_revoked"
     },
     {
         "bonus": "Marathas loyalty equilibrium",
@@ -2332,7 +2392,7 @@
     {
         "bonus": "Transport combat ability",
         "per_level": "+10",
-        "cost_per_level": 1.0,
+        "cost_per_level": 3.0,
         "type": "percentage",
         "base_cost": 0,
         "category": "DIP",
@@ -2687,7 +2747,7 @@
         "base_cost": 35,
         "category": "DIP",
         "image": "can_fabricate_claim_overseas_in_colonial_regions.png",
-        "name": "can_fabricate_claim_overseas_in_colonial_regions"
+        "name": "idea_claim_colonies"
     },
     {
         "bonus": "Cost to justify trade conflict",

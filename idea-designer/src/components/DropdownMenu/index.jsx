@@ -10,7 +10,7 @@ const DropdownMenu = ({ options, onSelect, name}) => {
     var match = false;
     option.forEach(item=> {
         if (item[0].toLowerCase().includes(searchQuery.toLowerCase())){
-            match = true;
+          match = true;
         }
     });
 
@@ -23,53 +23,22 @@ const DropdownMenu = ({ options, onSelect, name}) => {
   };
 
   return (
-    <div style={{ position: "relative", display: "inline-block", width: "200px" }}>
+    <div className="dropdownmenu" onClick={() => setIsOpen(!isOpen)}>
       {/* Botão para abrir o dropdown */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        style={{
-          width: "100%",
-          padding: "10px",
-          backgroundColor: "#007BFF",
-          color: "#fff",
-          border: "none",
-          borderRadius: "4px",
-          cursor: "pointer",
-        }}
-      >
+      <button className="dropdownmenu-button">
         Select {name}
       </button>
 
       {/* Dropdown */}
       {isOpen && (
-        <div
-          style={{
-            position: "absolute",
-            top: "100%",
-            left: 0,
-            width: "100%",
-            maxHeight: "200px",
-            overflowY: "auto",
-            backgroundColor: "#fff",
-            border: "1px solid #ccc",
-            borderRadius: "4px",
-            zIndex: 1000,
-          }}
-        >
+        <div className="dropdown">
           {/* Campo de pesquisa */}
           <input
             type="text"
             placeholder="Search..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            style={{
-              width: "100%",
-              padding: "10px",
-              boxSizing: "border-box",
-              border: "none",
-              borderBottom: "1px solid #ccc",
-              color: "#000",
-            }}
+            className="dropdownmenu-search"
           />
 
           {/* Lista de opções */}
@@ -77,16 +46,7 @@ const DropdownMenu = ({ options, onSelect, name}) => {
             <div
               key={index}
               onClick={() => handleSelect(option)}
-              style={{
-                padding: "10px",
-                cursor: "pointer",
-                borderBottom: "1px solid #ccc",
-                backgroundColor: "#fff",
-                transition: "background-color 0.2s",
-                color: "#000",
-              }}
-              onMouseEnter={(e) => (e.target.style.backgroundColor = "#f0f0f0")}
-              onMouseLeave={(e) => (e.target.style.backgroundColor = "#fff")}
+              className="dropdownmenu-option"
             >
               {option.map((idea) => {
                 return <h1 key={idea[1]} >{idea[0]}</h1>
@@ -96,7 +56,7 @@ const DropdownMenu = ({ options, onSelect, name}) => {
 
           {/* Caso não haja itens */}
           {filteredOptions.length === 0 && (
-            <div style={{ padding: "10px", textAlign: "center", color: "#999" }}>
+            <div className="dropdownmenu-no-results">
               No {name} Avaliable
             </div>
           )}

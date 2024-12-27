@@ -1,0 +1,78 @@
+/* Contêiner principal */
+.dropdownmenu {
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+/* Botão principal */
+.dropdownmenu-button {
+  color: white;
+  font-size: 16px;
+}
+
+/* Dropdown Container */
+.dropdownmenu .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 100%;
+  overflow: hidden;
+  max-height: 300px;
+  overflow-y: auto;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animação de aparição */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Lista de opções */
+.dropdownmenu-options {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.dropdownmenu-search {
+  padding: 12px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Estilo de cada opção */
+.dropdownmenu-option {
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.2s ease-in-out;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.dropdownmenu-option:hover {
+  background-color: #f5f5f5;
+}
+
+/* Sem resultados */
+.dropdownmenu-no-results {
+  padding: 12px 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}

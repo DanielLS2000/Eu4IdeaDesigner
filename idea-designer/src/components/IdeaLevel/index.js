@@ -19,7 +19,7 @@ const IdeaLevel = ({id, idea, selectedIdea}) => {
             </button>
 
             <div>
-                {idea[selectedIdea].level}
+                {idea[selectedIdea].level.toFixed(0)}
             </div>
             
             <button onClick={levelUp}>

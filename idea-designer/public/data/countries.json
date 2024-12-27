@@ -89,13 +89,14 @@
             "trade_efficiency": "0.10"
         },
         "slot5": {
-            "army_tradition": "0.5",
-            "administrative_efficiency": "0.05"
+            "army_tradition": "0.5"
         },
         "slot6": {
+            "administrative_efficiency": "0.05"
+        },
+        "slot7": {
             "global_trade_goods_size_modifier": "0.2"
         },
-        "slot7": {},
         "slot8": {
             "diplomatic_upkeep": "1"
         }
@@ -132,6 +133,40 @@
         },
         "slot8": {
             "naval_morale": "0.1"
+        }
+    },
+    "Scotland": {
+        "slot0": {
+            "leader_land_shock": "1",
+            "land_forcelimit_modifier": "0.25"
+        },
+        "slot1": {
+            "global_unrest": "-1"
+        },
+        "slot2": {
+            "global_ship_cost": "-0.1"
+        },
+        "slot3": {
+            "global_manpower_modifier": "0.2"
+        },
+        "slot4": {
+            "stability_cost_modifier": "-0.1"
+        },
+        "slot5": {
+            "global_tax_modifier": "0.1"
+        },
+        "slot6": {
+            "global_trade_goods_size_modifier": "0.2"
+        },
+        "slot7": {
+            "legitimacy": "1",
+            "devotion": "1",
+            "republican_tradition": "0.3",
+            "meritocracy": "1",
+            "horde_unity": "1"
+        },
+        "slot8": {
+            "ae_impact": "-0.15"
         }
     },
     "Great Britain": {
@@ -240,7 +275,7 @@
             "global_trade_power": "0.15"
         }
     },
-    "Uppland": {
+    "Sweden": {
         "slot0": {
             "infantry_power": "0.2",
             "merc_maintenance_modifier": "-0.15"
@@ -249,7 +284,7 @@
             "legitimacy": "1",
             "devotion": "1",
             "republican_tradition": "0.3",
-            "meritocracy": "1",
+            "meritocracy": "1\t#For completion's sake",
             "horde_unity": "1",
             "possible_policy": "1"
         },
@@ -406,7 +441,7 @@
             "manpower_recovery_speed": "0.15"
         }
     },
-    "\u00cdsland": {
+    "Iceland": {
         "slot0": {
             "may_explore": "yes",
             "hostile_attrition": "1"
@@ -441,7 +476,7 @@
             "colonists": "1"
         }
     },
-    "Visby": {
+    "Gotland": {
         "slot0": {
             "privateer_efficiency": "0.15",
             "core_creation": "-0.15"
@@ -613,7 +648,7 @@
             "discipline": "0.05"
         }
     },
-    "Castille": {
+    "Castile": {
         "slot0": {
             "land_morale": "0.15",
             "naval_forcelimit_modifier": "0.25"
@@ -682,50 +717,37 @@
     "France": {
         "slot0": {
             "diplomatic_reputation": "1",
-            "global_manpower_modifier": "0.2",
-            "max_revolutionary_zeal": "5",
-            "harsh_treatment_cost": "-0.5"
+            "global_manpower_modifier": "0.2"
         },
         "slot1": {
             "global_tax_modifier": "0.1",
-            "war_taxes_cost_modifier": "-0.5",
-            "years_of_nationalism": "-10"
+            "war_taxes_cost_modifier": "-0.5"
         },
         "slot2": {
             "army_tradition": "0.5",
-            "land_morale": "0.15",
-            "morale_damage": "0.05"
+            "land_morale": "0.15"
         },
         "slot3": {
             "reform_progress_growth": "0.1",
-            "global_unrest": "-1",
-            "production_efficiency": "0.15",
-            "inflation_reduction": "0.05"
+            "global_unrest": "-1"
         },
         "slot4": {
             "native_uprising_chance": "-0.5",
-            "native_assimilation": "0.5",
-            "tolerance_heretic": "1",
-            "tolerance_heathen": "1"
+            "native_assimilation": "0.5"
         },
         "slot5": {
             "core_creation": "-0.1",
-            "max_absolutism": "5",
-            "manpower_recovery_speed": "0.2"
+            "max_absolutism": "5"
         },
         "slot6": {
-            "discipline": "0.05",
-            "military_tactics": "0.1",
-            "drill_gain_modifier": "0.5"
+            "discipline": "0.05"
         },
         "slot7": {
             "defensiveness": "0.15",
-            "garrison_damage": "0.5",
-            "core_creation": "-0.2"
+            "garrison_damage": "0.5"
         },
         "slot8": {
-            "development_cost": "-0.1",
-            "siege_ability": "0.15"
+            "development_cost": "-0.1"
         }
     },
     "Ottomans": {
@@ -1138,7 +1160,8 @@
             "galley_power": "0.25"
         }
     },
-    "ZZZ": {
+    
+    "La Serenissima": {
         "slot0": {
             "trade_steering": "0.33",
             "galley_power": "0.25"
@@ -1146,7 +1169,9 @@
         "slot1": {
             "technology_cost": "-0.1"
         },
-        "slot2": {},
+        "slot2": {
+            "trade_efficiency": "0.2"
+        },
         "slot3": {
             "global_trade_power": "0.2"
         },
@@ -1234,7 +1259,7 @@
             "discipline": "0.05"
         }
     },
-    "Luticia": {
+    "Brandenburg": {
         "slot0": {
             "fabricate_claims_cost": "-0.2",
             "build_cost": "-0.15"
@@ -1266,7 +1291,67 @@
             "state_maintenance_modifier": "-0.25"
         }
     },
-    "Portucale": {
+    "Burgundy": {
+        "slot0": {
+            "land_morale": "0.1",
+            "diplomatic_upkeep": "1"
+        },
+        "slot1": {
+            "prestige": "1"
+        },
+        "slot2": {
+            "merc_maintenance_modifier": "-0.15"
+        },
+        "slot3": {
+            "mercenary_manpower": "0.5"
+        },
+        "slot4": {
+            "discipline": "0.05"
+        },
+        "slot5": {
+            "trade_efficiency": "0.1"
+        },
+        "slot6": {
+            "tolerance_heretic": "2"
+        },
+        "slot7": {
+            "global_manpower_modifier": "0.25"
+        },
+        "slot8": {
+            "global_trade_goods_size_modifier": "0.15"
+        }
+    },
+    "Florence": {
+        "slot0": {
+            "land_morale": "0.1",
+            "diplomatic_upkeep": "1"
+        },
+        "slot1": {
+            "prestige": "1"
+        },
+        "slot2": {
+            "merc_maintenance_modifier": "-0.15"
+        },
+        "slot3": {
+            "mercenary_manpower": "0.5"
+        },
+        "slot4": {
+            "discipline": "0.05"
+        },
+        "slot5": {
+            "trade_efficiency": "0.1"
+        },
+        "slot6": {
+            "tolerance_heretic": "2"
+        },
+        "slot7": {
+            "global_manpower_modifier": "0.25"
+        },
+        "slot8": {
+            "global_trade_goods_size_modifier": "0.15"
+        }
+    },
+    "Portugal": {
         "slot0": {
             "movement_speed_in_fleet_modifier": "1",
             "infantry_power": "0.1"
@@ -1299,7 +1384,7 @@
             "global_tariffs": "0.20"
         }
     },
-    "Greater Poland": {
+    "Poland": {
         "slot0": {
             "cavalry_cost": "-0.1",
             "num_accepted_cultures": "1"
@@ -1427,7 +1512,7 @@
             "tolerance_heretic": "3"
         }
     },
-    "Lithuanian Polish Commonwealth": {
+    "Commonwealth (LIT)": {
         "slot0": {
             "global_manpower_modifier": "0.25",
             "tolerance_heretic": "3"
@@ -1559,7 +1644,7 @@
             "recover_army_morale_speed": "0.10"
         }
     },
-    "Eranshar": {
+    "Eranshahr": {
         "slot0": {
             "land_morale": "0.15",
             "diplomatic_reputation": "2"
@@ -1750,7 +1835,7 @@
             "infantry_power": "0.15"
         }
     },
-    "Mamelucos 2": {
+    "Mamluks 2": {
         "slot0": {
             "trade_steering": "0.25",
             "cavalry_power": "0.10"
@@ -1908,7 +1993,7 @@
             "artillery_fire": "1"
         }
     },
-    "Liubice": {
+    "Lubeck": {
         "slot0": {
             "trade_range_modifier": "0.15",
             "trade_steering": "0.10"
@@ -1921,25 +2006,26 @@
         },
         "slot3": {
             "light_ship_cost": "-0.20",
-            "global_sailors_modifier": "0.15",
+            "global_sailors_modifier": "0.15"
+        },
+        "slot4": {
             "stability_cost_modifier": "-0.1",
             "justify_trade_conflict_cost": "-0.1"
         },
-        "slot4": {
+        "slot5": {
             "manpower_recovery_speed": "0.15"
         },
-        "slot5": {
+        "slot6": {
             "global_prov_trade_power_modifier": "0.20"
         },
-        "slot6": {
+        "slot7": {
             "interest": "-0.5"
         },
-        "slot7": {},
         "slot8": {
             "trade_efficiency": "0.10"
         }
     },
-    "Lombardy": {
+    "Milan": {
         "slot0": {
             "infantry_power": "0.10",
             "diplomatic_upkeep": "1"
@@ -2165,38 +2251,38 @@
     },
     "Great Moravia": {
         "slot0": {
-            "imperial_authority": "0.10",
-            "advisor_cost": "-0.1"
+            "global_manpower_modifier": "0.25",
+            "global_trade_goods_size_modifier": "0.1"
         },
         "slot1": {
-            "tolerance_heretic": "3"
+            "overextension_impact_modifier": "-0.25"
         },
         "slot2": {
+            "missionaries": "1"
+        },
+        "slot3": {
+            "monarch_admin_power": "1"
+        },
+        "slot4": {
+            "build_time": "-0.1",
+            "development_cost": "-0.05"
+        },
+        "slot5": {
             "legitimacy": "1",
             "devotion": "1",
             "republican_tradition": "0.3",
-            "meritocracy": "1\t#For completion's sake",
+            "meritocracy": "1",
             "horde_unity": "1"
         },
-        "slot3": {
-            "infantry_power": "0.10",
-            "shock_damage_received": "-0.05"
-        },
-        "slot4": {
-            "global_unrest": "-1"
-        },
-        "slot5": {
-            "technology_cost": "-0.1"
-        },
         "slot6": {
-            "stability_cost_modifier": "-0.10"
+            "tolerance_own": "3"
         },
         "slot7": {
-            "same_culture_advisor_cost": "-0.25",
-            "development_cost_in_primary_culture": "-0.05"
+            "discipline": "0.05",
+            "max_absolutism": "5"
         },
         "slot8": {
-            "leader_land_fire": "1"
+            "max_absolutism_effect": "0.15"
         }
     },
     "Italy": {
@@ -2339,7 +2425,7 @@
             "advisor_cost": "-0.15"
         }
     },
-    "West Franconia": {
+    "The Palatinate": {
         "slot0": {
             "global_tax_modifier": "0.10",
             "diplomatic_upkeep": "1"
@@ -2405,7 +2491,7 @@
             "defensiveness": "0.2"
         }
     },
-    "Abyssinia": {
+    "Ethiopia": {
         "slot0": {
             "global_autonomy": "-0.05",
             "land_attrition": "-0.10"
@@ -2536,7 +2622,7 @@
             "leader_naval_fire": "1"
         }
     },
-    "Piedmonte": {
+    "Sardinia Piedmont": {
         "slot0": {
             "idea_cost": "-0.1",
             "improve_relation_modifier": "0.25"
@@ -2566,7 +2652,7 @@
             "global_tax_modifier": "0.15"
         }
     },
-    "Angria": {
+    "Saxony": {
         "slot0": {
             "advisor_cost": "-0.1",
             "development_cost": "-0.1"
@@ -2597,7 +2683,7 @@
             "prestige": "1.0"
         }
     },
-    "Maharastra": {
+    "Marathas": {
         "slot0": {
             "manpower_recovery_speed": "0.15",
             "global_manpower_modifier": "0.10"
@@ -2657,41 +2743,37 @@
             "core_creation": "-0.15"
         }
     },
-    "Candras": {
+    "Ava": {
         "slot0": {
-            "production_efficiency": "0.1",
-            "shock_damage_received": "-0.1"
+            "land_morale": "0.1",
+            "infantry_cost": "-0.15"
         },
         "slot1": {
-            "infantry_power": "0.1"
-        },
-        "slot2": {
-            "legitimacy": "1",
-            "devotion": "1",
-            "republican_tradition": "0.3",
-            "meritocracy": "1",
-            "horde_unity": "1"
-        },
-        "slot3": {
-            "global_tax_modifier": "0.1"
-        },
-        "slot4": {
-            "global_trade_goods_size_modifier": "0.1"
-        },
-        "slot5": {
             "prestige": "1"
         },
+        "slot2": {
+            "land_forcelimit_modifier": "0.2"
+        },
+        "slot3": {
+            "stability_cost_modifier": "-0.10"
+        },
+        "slot4": {
+            "same_culture_advisor_cost": "-0.2"
+        },
+        "slot5": {
+            "global_manpower_modifier": "0.2"
+        },
         "slot6": {
-            "trade_efficiency": "0.1"
+            "diplomatic_reputation": "1"
         },
         "slot7": {
-            "naval_forcelimit_modifier": "0.25"
+            "global_autonomy": "-0.05"
         },
         "slot8": {
-            "trade_steering": "0.20"
+            "cavalry_power": "0.15"
         }
     },
-    "Garnatah": {
+    "Granada": {
         "slot0": {
             "global_tax_modifier": "0.15",
             "religious_unity": "0.25"
@@ -2752,7 +2834,7 @@
             "discipline": "0.05"
         }
     },
-    "Ra\u0161ka": {
+    "Serbia": {
         "slot0": {
             "manpower_recovery_speed": "0.15",
             "reinforce_speed": "0.15"
@@ -2780,6 +2862,40 @@
         },
         "slot8": {
             "infantry_power": "0.10"
+        }
+    },
+    "Orissa": {
+        "slot0": {
+            "production_efficiency": "0.1",
+            "shock_damage_received": "-0.1"
+        },
+        "slot1": {
+            "infantry_power": "0.1"
+        },
+        "slot2": {
+            "legitimacy": "1",
+            "devotion": "1",
+            "republican_tradition": "0.3",
+            "meritocracy": "1",
+            "horde_unity": "1"
+        },
+        "slot3": {
+            "global_tax_modifier": "0.1"
+        },
+        "slot4": {
+            "global_trade_goods_size_modifier": "0.1"
+        },
+        "slot5": {
+            "prestige": "1"
+        },
+        "slot6": {
+            "trade_efficiency": "0.1"
+        },
+        "slot7": {
+            "naval_forcelimit_modifier": "0.25"
+        },
+        "slot8": {
+            "trade_steering": "0.20"
         }
     },
     "Punjab": {
@@ -2812,7 +2928,7 @@
             "cavalry_power": "0.1"
         }
     },
-    "Dubrovnik": {
+    "Ragusa": {
         "slot0": {
             "trade_efficiency": "0.1",
             "global_foreign_trade_power": "0.1"
@@ -2873,7 +2989,7 @@
             "prestige_decay": "-0.01"
         }
     },
-    "Kamarupa": {
+    "Assam": {
         "slot0": {
             "global_manpower_modifier": "0.10",
             "global_unrest": "-1"
@@ -3004,7 +3120,7 @@
             "discipline": "0.05"
         }
     },
-    "Songhay": {
+    "Songhai": {
         "slot0": {
             "infantry_power": "0.1",
             "army_tradition": "0.5"
@@ -3128,7 +3244,7 @@
             "cavalry_power": "0.15"
         }
     },
-    "Himalaya": {
+    "Nepal": {
         "slot0": {
             "land_forcelimit_modifier": "0.25",
             "manpower_recovery_speed": "0.1"
@@ -3311,7 +3427,7 @@
             "improve_relation_modifier": "0.5"
         }
     },
-    "CHICK": {
+    "Chick": {
         "slot0": {
             "land_forcelimit_modifier": "0.25",
             "war_exhaustion_cost": "-0.15"
@@ -3463,7 +3579,7 @@
             "global_tax_modifier": "0.1"
         }
     },
-    "Curonia": {
+    "Kurland": {
         "slot0": {
             "discipline": "0.05",
             "army_tradition_decay": "-0.01"
@@ -3632,7 +3748,7 @@
             "infantry_cost": "-0.2"
         }
     },
-    "Ghaznavid Kabulistan": {
+    "Afghanistan": {
         "slot0": {
             "army_tradition": "0.5",
             "global_own_trade_power": "0.1"
@@ -3666,7 +3782,7 @@
             "general_cost": "-0.33"
         }
     },
-    "Muntenia": {
+    "Wallachia": {
         "slot0": {
             "defensiveness": "0.2",
             "discipline": "0.05"
@@ -3768,7 +3884,7 @@
             "naval_forcelimit_modifier": "0.33"
         }
     },
-    "Banbalunah": {
+    "Navarra": {
         "slot0": {
             "morale_damage": "0.1",
             "diplomatic_reputation": "1"
@@ -3873,7 +3989,7 @@
             "production_efficiency": "0.1"
         }
     },
-    "Tedas": {
+    "Kanem Bornu": {
         "slot0": {
             "vassal_income": "0.25",
             "ae_impact": "-0.1"
@@ -3938,7 +4054,7 @@
             "discipline": "0.05"
         }
     },
-    "Lower Silesia": {
+    "Silesia": {
         "slot0": {
             "prestige": "1",
             "diplomatic_reputation": "1"
@@ -3969,7 +4085,7 @@
             "global_tax_modifier": "0.10"
         }
     },
-    "Pomerelia": {
+    "Danzig": {
         "slot0": {
             "global_own_trade_power": "0.1",
             "trade_efficiency": "0.1"
@@ -4000,7 +4116,7 @@
             "trade_steering": "0.2"
         }
     },
-    "Lesser Poland": {
+    "Krakow": {
         "slot0": {
             "trade_steering": "0.1",
             "trade_efficiency": "0.1"
@@ -4031,7 +4147,7 @@
             "prestige": "1"
         }
     },
-    "Ajuraan": {
+    "Ajuuraan": {
         "slot0": {
             "build_cost": "-0.1",
             "global_missionary_strength": "0.01"
@@ -4185,7 +4301,7 @@
             "global_trade_goods_size_modifier": "0.2"
         }
     },
-    "Greater Smolensk": {
+    "Smolensk": {
         "slot0": {
             "prestige_decay": "-0.01",
             "advisor_cost": "-0.15"
@@ -4252,7 +4368,7 @@
             "core_creation": "-0.15"
         }
     },
-    "Zahumlje": {
+    "Herzegovina": {
         "slot0": {
             "leader_land_manuever": "1",
             "global_trade_goods_size_modifier": "0.1"
@@ -4484,7 +4600,7 @@
             "discipline": "0.05"
         }
     },
-    "Duklja": {
+    "Montenegro": {
         "slot0": {
             "defensiveness": "0.15",
             "hostile_attrition": "1"
@@ -4519,7 +4635,7 @@
             "infantry_power": "0.1"
         }
     },
-    "Rmn": {
+    "Romania": {
         "slot0": {
             "discipline": "0.05",
             "tolerance_own": "2"
@@ -4589,7 +4705,7 @@
             "land_morale": "0.1"
         }
     },
-    "Dyrrachion": {
+    "Albania": {
         "slot0": {
             "defensiveness": "0.2",
             "manpower_recovery_speed": "0.10"
@@ -4655,7 +4771,7 @@
             "infantry_power": "0.1"
         }
     },
-    "Permia": {
+    "Perm": {
         "slot0": {
             "prestige_decay": "-0.01",
             "tolerance_heathen": "2"
@@ -4719,7 +4835,7 @@
             "merchants": "1"
         }
     },
-    "Mpc": {
+    "Mapuche": {
         "slot0": {
             "hostile_attrition": "1",
             "global_manpower_modifier": "0.1"
@@ -4812,7 +4928,7 @@
             "prestige": "1"
         }
     },
-    "Mca": {
+    "Muisca": {
         "slot0": {
             "global_own_trade_power": "0.25",
             "defensiveness": "0.15"
@@ -4909,7 +5025,7 @@
             "global_institution_spread": "0.1"
         }
     },
-    "Liv": {
+    "Livonian Order": {
         "slot0": {
             "num_accepted_cultures": "2",
             "missionaries": "1"
@@ -4954,22 +5070,23 @@
             "development_cost": "-0.05"
         },
         "slot3": {
-            "global_foreign_trade_power": "0.25",
+            "global_foreign_trade_power": "0.25"
+        },
+        "slot4": {
             "stability_cost_modifier": "-0.05",
             "all_estate_loyalty_equilibrium": "0.1"
         },
-        "slot4": {
+        "slot5": {
             "range": "0.25",
             "global_colonial_growth": "10"
         },
-        "slot5": {
+        "slot6": {
             "naval_morale": "0.2"
         },
-        "slot6": {
+        "slot7": {
             "tolerance_of_heretics_capacity": "1",
             "tolerance_heretic": "1"
         },
-        "slot7": {},
         "slot8": {
             "global_trade_goods_size_modifier": "0.1"
         }
@@ -5008,7 +5125,7 @@
             "infantry_power": "0.15"
         }
     },
-    "Kyiv": {
+    "Kiev": {
         "slot0": {
             "global_unrest": "-1",
             "global_heretic_missionary_strength": "0.01"
@@ -5039,7 +5156,7 @@
             "land_morale": "0.1"
         }
     },
-    "Aegean Islands": {
+    "Naxos": {
         "slot0": {
             "tolerance_heretic": "4",
             "fabricate_claims_cost": "-0.25"
@@ -5349,7 +5466,7 @@
             "cavalry_power": "0.10"
         }
     },
-    "Alania": {
+    "Circassia": {
         "slot0": {
             "stability_cost_modifier": "-0.1",
             "defensiveness": "0.2"
@@ -5412,7 +5529,7 @@
             "land_forcelimit_modifier": "0.2"
         }
     },
-    "Khwarezm": {
+    "Khiva": {
         "slot0": {
             "land_attrition": "-0.1",
             "cavalry_cost": "-0.1"
@@ -5641,7 +5758,7 @@
             "global_manpower_modifier": "0.2"
         }
     },
-    "Yedisan": {
+    "Zaporozhie": {
         "slot0": {
             "loot_amount": "0.25",
             "manpower_recovery_speed": "0.1"
@@ -5862,7 +5979,7 @@
             "improve_relation_modifier": "0.3"
         }
     },
-    "Vijayabahus": {
+    "Kotte": {
         "slot0": {
             "defensiveness": "0.1",
             "trade_efficiency": "0.1"
@@ -6151,7 +6268,7 @@
             "light_ship_power": "0.15"
         }
     },
-    "Norroy": {
+    "Northumberland": {
         "slot0": {
             "hostile_attrition": "1.0",
             "cavalry_power": "0.1 #Border Reivers"
@@ -6216,7 +6333,7 @@
             "global_heretic_missionary_strength": "0.02"
         }
     },
-    "Th\u00fcringia": {
+    "Thuringia": {
         "slot0": {
             "province_warscore_cost": "-0.1",
             "diplomats": "1"
@@ -6284,7 +6401,7 @@
             "global_manpower_modifier": "0.2"
         }
     },
-    "Barcelona": {
+    "Catalonia": {
         "slot0": {
             "merchants": "1",
             "light_ship_cost": "-0.15"
@@ -6646,38 +6763,38 @@
             "development_cost": "-0.1"
         }
     },
-    "Soomras": {
+    "Baluchistan": {
         "slot0": {
-            "land_forcelimit_modifier": "0.25",
-            "missionaries": "1"
+            "fort_maintenance_modifier": "-0.1",
+            "loot_amount": "0.25"
         },
         "slot1": {
+            "hostile_attrition": "1.0"
+        },
+        "slot2": {
+            "shock_damage_received": "-0.1"
+        },
+        "slot3": {
             "legitimacy": "1",
             "devotion": "1",
             "republican_tradition": "0.3",
             "meritocracy": "1",
             "horde_unity": "1"
         },
-        "slot2": {
-            "global_missionary_strength": "0.02"
-        },
-        "slot3": {
-            "placed_merchant_power": "5"
-        },
         "slot4": {
-            "tolerance_own": "1"
+            "global_manpower_modifier": "0.15"
         },
         "slot5": {
-            "yearly_corruption": "-0.1"
+            "global_own_trade_power": "0.1"
         },
         "slot6": {
-            "build_cost": "-0.1"
+            "global_tax_modifier": "0.1"
         },
         "slot7": {
-            "mercenary_discipline": "0.025"
+            "army_tradition": "0.5"
         },
         "slot8": {
-            "global_manpower_modifier": "0.15"
+            "land_forcelimit_modifier": "0.2"
         }
     },
     "Orleans": {
@@ -6903,7 +7020,7 @@
             "manpower_recovery_speed": "0.1"
         }
     },
-    "Nizhny Novgorod": {
+    "Nzh": {
         "slot0": {
             "build_cost": "-0.1",
             "fort_maintenance_modifier": "-0.10"
@@ -6933,7 +7050,7 @@
             "fabricate_claims_cost": "-0.25"
         }
     },
-    "Leporie": {
+    "S\u00e1pmi": {
         "slot0": {
             "religious_unity": "0.3",
             "global_manpower_modifier": "0.1"
@@ -7057,7 +7174,7 @@
             "infantry_power": "0.1"
         }
     },
-    "Dahlaks": {
+    "Med": {
         "slot0": {
             "stability_cost_modifier": "-0.1",
             "trade_steering": "0.1"
@@ -7147,7 +7264,7 @@
             "land_maintenance_modifier": "-0.05"
         }
     },
-    "Palas": {
+    "Tirhut": {
         "slot0": {
             "global_tax_modifier": "0.10",
             "tolerance_own": "2"
@@ -7278,7 +7395,7 @@
             "fabricate_claims_cost": "-0.25"
         }
     },
-    "Breifne": {
+    "Sligo": {
         "slot0": {
             "build_cost": "-0.10",
             "diplomats": "1"
@@ -7700,7 +7817,7 @@
             "stability_cost_modifier": "-0.1"
         }
     },
-    "Cephalonia": {
+    "Corfu": {
         "slot0": {
             "galley_cost": "-0.2",
             "galley_power": "0.2"
@@ -7730,7 +7847,7 @@
             "merchants": "1"
         }
     },
-    "Upper Lotharingia": {
+    "Lorraine": {
         "slot0": {
             "caravan_power": "0.2",
             "infantry_cost": "-0.1"
@@ -7760,7 +7877,7 @@
             "global_tax_modifier": "0.1"
         }
     },
-    "W\u00fcrttemberg": {
+    "Wurttemberg": {
         "slot0": {
             "legitimacy": "1",
             "devotion": "1",
@@ -7794,7 +7911,7 @@
             "improve_relation_modifier": "0.3"
         }
     },
-    "Nyitra": {
+    "Nitra": {
         "slot0": {
             "infantry_power": "0.1",
             "defensiveness": "0.2"
@@ -9519,7 +9636,7 @@
             "army_tradition": "0.5"
         }
     },
-    "Augsburg": {
+    "Aug": {
         "slot0": {
             "improve_relation_modifier": "0.2",
             "land_morale": "0.1"
@@ -9554,7 +9671,7 @@
             "development_cost": "-0.1"
         }
     },
-    "Frn": {
+    "Frankfurt": {
         "slot0": {
             "global_tax_modifier": "0.1",
             "global_trade_power": "0.15"
@@ -9590,7 +9707,7 @@
             "land_morale": "0.1"
         }
     },
-    "Lower Lotharingia": {
+    "Cologne": {
         "slot0": {
             "global_manpower_modifier": "0.15",
             "missionaries": "1"
@@ -9723,7 +9840,7 @@
             "land_maintenance_modifier": "-0.05"
         }
     },
-    "Dihganis": {
+    "Khorasan": {
         "slot0": {
             "cavalry_power": "0.15",
             "land_morale": "0.1"
@@ -9888,7 +10005,9 @@
             "province_warscore_cost": "-0.05",
             "core_creation": "-0.1"
         },
-        "slot3": {},
+        "slot3": {
+            "tolerance_heretic": "3"
+        },
         "slot4": {
             "leader_land_manuever": "1"
         },
@@ -10800,7 +10919,7 @@
             "missionaries": "1"
         }
     },
-    "Connacht": {
+    "Clanricarde": {
         "slot0": {
             "tolerance_own": "1",
             "trade_steering": "0.10"
@@ -10864,7 +10983,7 @@
             "horde_unity": "1"
         }
     },
-    "Irish": {
+    "Ireland": {
         "slot0": {
             "land_morale": "0.1",
             "trade_efficiency": "0.1"
@@ -10998,7 +11117,7 @@
             "land_morale": "0.10"
         }
     },
-    "Isle of Man": {
+    "Mann": {
         "slot0": {
             "global_sailors_modifier": "0.2",
             "global_ship_cost": "-0.1"
@@ -11058,7 +11177,7 @@
             "leader_siege": "1"
         }
     },
-    "Frisia": {
+    "Friesland": {
         "slot0": {
             "production_efficiency": "0.1",
             "development_cost": "-0.1"
@@ -11260,7 +11379,7 @@
             "tolerance_heretic": "2"
         }
     },
-    "Ostfriesland": {
+    "Efr": {
         "slot0": {
             "privateer_efficiency": "0.15",
             "heir_chance": "0.5"
@@ -11583,7 +11702,7 @@
             "war_exhaustion": "-0.03"
         }
     },
-    "Gauda": {
+    "Bengal": {
         "slot0": {
             "infantry_power": "0.1",
             "global_manpower_modifier": "0.15"
@@ -11641,6 +11760,40 @@
         },
         "slot8": {
             "global_trade_power": "0.2"
+        }
+    },
+    "Sindh": {
+        "slot0": {
+            "land_forcelimit_modifier": "0.25",
+            "missionaries": "1"
+        },
+        "slot1": {
+            "legitimacy": "1",
+            "devotion": "1",
+            "republican_tradition": "0.3",
+            "meritocracy": "1",
+            "horde_unity": "1"
+        },
+        "slot2": {
+            "global_missionary_strength": "0.02"
+        },
+        "slot3": {
+            "placed_merchant_power": "5"
+        },
+        "slot4": {
+            "tolerance_own": "1"
+        },
+        "slot5": {
+            "yearly_corruption": "-0.1"
+        },
+        "slot6": {
+            "build_cost": "-0.1"
+        },
+        "slot7": {
+            "mercenary_discipline": "0.025"
+        },
+        "slot8": {
+            "global_manpower_modifier": "0.15"
         }
     },
     "Dhundhar": {
@@ -11739,7 +11892,7 @@
             "manpower_recovery_speed": "0.2"
         }
     },
-    "Latgalia": {
+    "Ltg": {
         "slot0": {
             "manpower_recovery_speed": "0.15",
             "global_unrest": "-1"
@@ -12520,7 +12673,7 @@
             "diplomatic_reputation": "1"
         }
     },
-    "Epirus": {
+    "Epi": {
         "slot0": {
             "merchants": "1",
             "tolerance_heretic": "4"
@@ -12589,7 +12742,7 @@
             "missionaries": "1"
         }
     },
-    "Lot": {
+    "Lotharingia": {
         "slot0": {
             "infantry_power": "0.1",
             "global_manpower_modifier": "0.25"
@@ -12620,7 +12773,7 @@
             "ae_impact": "-0.1"
         }
     },
-    "East Franconia": {
+    "Fkn": {
         "slot0": {
             "ae_impact": "-0.1",
             "global_manpower_modifier": "0.2"
@@ -12653,7 +12806,7 @@
             "discipline": "0.05"
         }
     },
-    "Lusatia": {
+    "Sor": {
         "slot0": {
             "vassal_income": "0.2",
             "tolerance_own": "2"
@@ -12662,22 +12815,23 @@
             "hostile_attrition": "1"
         },
         "slot2": {
-            "global_tax_modifier": "0.1",
-            "stability_cost_modifier": "-0.15"
+            "global_tax_modifier": "0.1"
         },
         "slot3": {
-            "ae_impact": "-0.1"
+            "stability_cost_modifier": "-0.15"
         },
         "slot4": {
-            "state_maintenance_modifier": "-0.15"
+            "ae_impact": "-0.1"
         },
         "slot5": {
-            "tolerance_heretic": "3"
+            "state_maintenance_modifier": "-0.15"
         },
         "slot6": {
+            "tolerance_heretic": "3"
+        },
+        "slot7": {
             "num_accepted_cultures": "2"
         },
-        "slot7": {},
         "slot8": {
             "global_autonomy": "-0.05"
         }
@@ -12712,7 +12866,7 @@
             "leader_siege": "1"
         }
     },
-    "Westfalen": {
+    "Wes": {
         "slot0": {
             "diplomats": "1",
             "land_forcelimit_modifier": "0.2"
@@ -12777,7 +12931,7 @@
             "land_morale": "0.15"
         }
     },
-    "Currezia": {
+    "Ttl": {
         "slot0": {
             "discipline": "0.05",
             "global_tax_modifier": "0.1"
@@ -13078,7 +13232,7 @@
             "land_morale": "0.10"
         }
     },
-    "Maj": {
+    "Majapahit": {
         "slot0": {
             "ae_impact": "-0.15",
             "legitimacy": "1",
@@ -13271,7 +13425,7 @@
             "merchants": "1"
         }
     },
-    "Msa": {
+    "Malaya": {
         "slot0": {
             "global_trade_power": "0.15",
             "land_morale": "0.1"
@@ -13303,7 +13457,7 @@
             "ship_durability": "0.1"
         }
     },
-    "Sia": {
+    "Siam": {
         "slot0": {
             "land_morale": "0.1",
             "global_manpower_modifier": "0.25"
@@ -13337,7 +13491,7 @@
             "discipline": "0.05"
         }
     },
-    "Lfa": {
+    "Lanfang": {
         "slot0": {
             "inflation_reduction": "0.1",
             "infantry_power": "0.1"
@@ -13611,7 +13765,7 @@
             "idea_cost": "-0.1"
         }
     },
-    "Isr": {
+    "Israel": {
         "slot0": {
             "legitimacy": "1",
             "devotion": "1",
@@ -13647,7 +13801,7 @@
             "diplomatic_reputation": "1"
         }
     },
-    "Yorubaland": {
+    "Oyo": {
         "slot0": {
             "improve_relation_modifier": "0.2",
             "reduced_liberty_desire": "10"
@@ -13720,7 +13874,7 @@
             "global_trade_power": "0.1"
         }
     },
-    "Gzi": {
+    "Zimbabwe": {
         "slot0": {
             "fort_maintenance_modifier": "-0.1",
             "land_morale": "0.1"
@@ -13752,7 +13906,7 @@
             "trade_efficiency": "0.2"
         }
     },
-    "Aks": {
+    "Aksum": {
         "slot0": {
             "governing_capacity_modifier": "0.15",
             "discipline": "0.05"
@@ -13783,7 +13937,7 @@
             "global_manpower_modifier": "0.25"
         }
     },
-    "Som": {
+    "Somalia": {
         "slot0": {
             "may_perform_slave_raid_on_same_religion": "yes",
             "land_morale": "0.1"
@@ -13817,7 +13971,7 @@
             "galley_power": "0.15"
         }
     },
-    "Kit": {
+    "Kitara": {
         "slot0": {
             "prestige_decay": "-0.01",
             "manpower_recovery_speed": "0.15"
@@ -13882,7 +14036,7 @@
             "fire_damage": "0.1"
         }
     },
-    "Makhzumis": {
+    "Adal": {
         "slot0": {
             "land_maintenance_modifier": "-0.1",
             "trade_efficiency": "0.1"
@@ -13917,7 +14071,7 @@
             "discipline": "0.05"
         }
     },
-    "Takr\u00fbr": {
+    "Jolof": {
         "slot0": {
             "siege_ability": "0.1",
             "nobles_loyalty_modifier": "0.1"
@@ -13953,7 +14107,7 @@
             "global_autonomy": "-0.05"
         }
     },
-    "Zul": {
+    "Zulu": {
         "slot0": {
             "army_tradition_from_battle": "1",
             "land_forcelimit_modifier": "0.25"
@@ -13986,7 +14140,7 @@
             "discipline": "0.05"
         }
     },
-    "Fu2": {
+    "Hansa": {
         "slot0": {
             "trade_efficiency": "0.2",
             "merchants": "1"
@@ -14167,7 +14321,7 @@
             "naval_morale": "0.15"
         }
     },
-    "Auh": {
+    "Austria-Hungary": {
         "slot0": {
             "land_morale": "0.1",
             "diplomatic_reputation": "2"
@@ -14196,42 +14350,6 @@
         },
         "slot8": {
             "no_religion_penalty": "yes"
-        }
-    },
-    "Gma": {
-        "slot0": {
-            "global_manpower_modifier": "0.25",
-            "global_trade_goods_size_modifier": "0.1"
-        },
-        "slot1": {
-            "overextension_impact_modifier": "-0.25"
-        },
-        "slot2": {
-            "missionaries": "1"
-        },
-        "slot3": {
-            "monarch_admin_power": "1"
-        },
-        "slot4": {
-            "build_time": "-0.1",
-            "development_cost": "-0.05"
-        },
-        "slot5": {
-            "legitimacy": "1",
-            "devotion": "1",
-            "republican_tradition": "0.3",
-            "meritocracy": "1",
-            "horde_unity": "1"
-        },
-        "slot6": {
-            "tolerance_own": "3"
-        },
-        "slot7": {
-            "discipline": "0.05",
-            "max_absolutism": "5"
-        },
-        "slot8": {
-            "max_absolutism_effect": "0.15"
         }
     },
     "Voc": {

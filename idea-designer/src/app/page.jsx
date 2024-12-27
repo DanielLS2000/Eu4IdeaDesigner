@@ -1,6 +1,5 @@
 'use client'
 
-import Image from "next/image";
 import IdeaSelector from "@/components/IdeaSelector";
 import Preview from "@/components/Preview";
 import TotalCost from "@/components/TotalCost";
@@ -11,14 +10,13 @@ import { CountriesProvider } from "@/context/countriesContext";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="main">
       <CountriesProvider>
         <IdeaSetProvider>
-
           <div className="cabecalho">
             <Header/>
           </div>
-          <div className="mainConteiner">
+          <div className="mainContainer">
             <div className="primaryContainer">
               <IdeaSelector/>
             </div>

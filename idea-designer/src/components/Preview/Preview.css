@@ -1,0 +1,98 @@
+/* Contêiner principal */
+.preview {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  border: 1px solid rgba(32, 48, 59, 1);
+}
+  
+/* Cabeçalho */
+.preview-header {
+display: grid;
+grid-template-columns: 3fr 1fr;
+gap: 10px;
+background-color: rgba(32, 48, 59, 1);
+color: white;
+font-weight: bold;
+text-align: center;
+padding: 3px;
+}
+
+/* Estilo dos itens do cabeçalho */
+.header-item {
+text-align: center;
+font-size: 1rem;
+}
+
+/* Lista de ideias */
+.preview-list {
+display: flex;
+flex-direction: column;
+}
+
+/* Cada linha de ideia */
+.preview-row {
+display: grid;
+grid-template-columns: 3fr 1fr; /* Mesma estrutura do cabeçalho */
+gap: 10px;
+padding: 2px;
+}
+
+/* Estilo de cada item */
+.row-item {
+overflow: hidden;
+padding-left: 3px;
+white-space: nowrap;
+text-overflow: ellipsis;
+color: black;
+white-space: normal;
+word-wrap: break-word;
+overflow-wrap: break-word;
+}
+
+.row-item-cost {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: black;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  }
+
+.preview-slot {
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
+  border-width: 80%;
+}
+
+.inline-content {
+  display: flex; /* Torna o conteúdo flexível */
+  align-items: center; /* Alinha verticalmente os itens no centro */
+  gap: 5px; /* Espaço entre a imagem e o texto */
+}
+
+.idea-image {
+  width: 32px; /* Define a largura da imagem (ajuste conforme necessário) */
+  height: 32px; /* Define a altura da imagem */
+  object-fit: contain; /* Garante que a imagem se ajuste sem distorção */
+}
+
+.inline-content h1 {
+  font-weight: bold;
+  color: black;
+}
+
+.inline-content input {
+  font-weight: bold;
+  color: black;
+}
+
+.top-header {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
