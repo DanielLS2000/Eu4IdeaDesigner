@@ -1247,7 +1247,7 @@
         "base_cost": 0,
         "category": "MIL",
         "image": "recruitment_time.png",
-        "name": "recruitment_time"
+        "name": "global_regiment_recruit_speed"
     },
     {
         "bonus": "Prestige from land battles",
@@ -2300,6 +2300,16 @@
         "name": "diplomatic_annexation_cost"
     },
     {
+        "bonus": "Years to integrate personal union",
+        "per_level": "-5.0",
+        "cost_per_level": 5.0,
+        "type": "percentage",
+        "base_cost": 0,
+        "category": "DIP",
+        "image": "years_to_integrate_personal_union.png",
+        "name": "years_to_integrate_personal_union"
+    },
+    {
         "bonus": "Heavy ship cost",
         "per_level": "-5.0",
         "cost_per_level": 5.0,
@@ -3018,6 +3028,16 @@
         "category": "DIP",
         "image": "ship_costs.png",
         "name": "global_ship_cost"
+    },
+    {
+        "bonus": "Flagship costs",
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
+        "type": "percentage",
+        "base_cost": 0,
+        "category": "DIP",
+        "image": "flagship_cost.png",
+        "name": "flagship_cost"
     },
     {
         "bonus": "Lowered impact on stability from diplomatic actions",
