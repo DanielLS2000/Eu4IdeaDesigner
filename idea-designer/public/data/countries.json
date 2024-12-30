@@ -1142,9 +1142,7 @@
         },
         "slot4": {
             "global_spy_defence": "0.3",
-            "yearly_corruption": "-0.05",
-            "diplomats": "1",
-            "max_absolutism": "10"
+            "yearly_corruption": "-0.05"
         },
         "slot5": {
             "global_sailors_modifier": "0.33",
