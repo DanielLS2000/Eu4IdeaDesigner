@@ -1210,6 +1210,16 @@
         "name": "leader_land_fire"
     },
     {
+        "bonus": "Max general fire",
+        "per_level": "+1",
+        "cost_per_level": 110.0,
+        "type": "absolute",
+        "base_cost": 30,
+        "category": "MIL",
+        "image": "max_general_fire.png",
+        "name": "max_general_fire"
+    },
+    {
         "bonus": "Land leader shock",
         "per_level": "+1",
         "cost_per_level": 110.0,
@@ -3058,6 +3068,16 @@
         "category": "DIP",
         "image": "may_explore.png",
         "name": "may_explore"
+    },
+    {
+        "bonus": "Ships repair while in coastal sea provinces.",
+        "per_level": "Yes",
+        "cost_per_level": 40,
+        "type": "binary",
+        "base_cost": 40,
+        "category": "DIP",
+        "image": "sea_repair.png",
+        "name": "sea_repair"
     },
     {
         "bonus": "Monthly favor growth modifier",
