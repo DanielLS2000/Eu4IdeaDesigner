@@ -3098,5 +3098,258 @@
         "category": "DIP",
         "image": "fleet_movement_speed.png",
         "name": "movement_speed_in_fleet_modifier"
+    },
+
+
+    
+    {
+        "bonus": "Administrative advisor cost",
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
+        "type": "percentage",
+        "base_cost": "0",
+        "category": "ADM",
+        "image": "advisor_costs.png",
+        "name": "adm_advisor_cost"
+    },
+    {
+        "bonus": "Possible samurai",
+        "per_level": "+10.0",
+        "cost_per_level": 5.0,
+        "type": "percentage",
+        "base_cost": "0",
+        "category": "MIL",
+        "image": "possible_samurai.png",
+        "name": "allowed_samurai_fraction"
+    },
+    {
+        "bonus": "Artillery levels available vs fort",
+        "per_level": "+1",
+        "cost_per_level": 7.0,
+        "type": "absolute",
+        "base_cost": "3",
+        "category": "MIL",
+        "image": "artillery_bonus_vs_fort.png",
+        "name": "artillery_level_modifier"
+    },
+    {
+        "bonus": "Burghers influence",
+        "per_level": "-5.0",
+        "cost_per_level": 3.0,
+        "type": "percentage",
+        "base_cost": "0",
+        "category": "ADM",
+        "image": "burghers_influence.png",
+        "name": "burghers_influence_modifier"
+    },
+    {
+        "bonus": "Cossacks privilege slots",
+        "per_level": "+1",
+        "cost_per_level": 30.0,
+        "type": "absolute",
+        "base_cost": "30",
+        "category": "MIL",
+        "image": "cossacks_loyalty_equilibrium.png",
+        "name": "cossacks_privilege_slots"
+    },
+    {
+        "bonus": "Development cost in primary culture",
+        "per_level": "-10.0",
+        "cost_per_level": 25.0,
+        "type": "percentage",
+        "base_cost": "5",
+        "category": "ADM",
+        "image": "development_cost.png",
+        "name": "development_cost_in_primary_culture"
+    },
+    {
+        "bonus": "Ghulams privilege slots",
+        "per_level": "+1",
+        "cost_per_level": 30.0,
+        "type": "absolute",
+        "base_cost": "30",
+        "category": "MIL",
+        "image": "ghulams_privilege_slots.png",
+        "name": "ghulams_privilege_slots"
+    },
+    {
+        "bonus": "Great project upgrade time",
+        "per_level": "-10.0",
+        "cost_per_level": 3.0,
+        "type": "percentage",
+        "base_cost": "0",
+        "category": "ADM",
+        "image": "great_project_upgrade_time.png",
+        "name": "great_project_upgrade_time"
+    },
+    {
+        "bonus": "Can construct Geobukseon",
+        "per_level": "Yes",
+        "cost_per_level": 0.0,
+        "type": "binary",
+        "base_cost": "0",
+        "category": "DIP",
+        "image": "has_geobukseon.png",
+        "name": "has_geobukseon"
+    },
+    {
+        "bonus": "Can recruit Samurai",
+        "per_level": "Yes",
+        "cost_per_level": 0.0,
+        "type": "binary",
+        "base_cost": "0",
+        "category": "MIL",
+        "image": "has_samurai.png",
+        "name": "has_samurai"
+    },
+    {
+        "bonus": "Manpower in accepted culture provinces",
+        "per_level": "+10.0",
+        "cost_per_level": 5.0,
+        "type": "percentage",
+        "base_cost": "0",
+        "category": "MIL",
+        "image": "manpower_in_accepted_culture_provinces.png",
+        "name": "manpower_in_accepted_culture_provinces"
+    },
+    {
+        "bonus": "Manpower in primary culture provinces",
+        "per_level": "+10.0",
+        "cost_per_level": 5.0,
+        "type": "percentage",
+        "base_cost": "0",
+        "category": "MIL",
+        "image": "manpower_in_own_culture_provinces.png",
+        "name": "manpower_in_own_culture_provinces"
+    },
+    {
+        "bonus": "Maximum hostile attrition",
+        "per_level": "+1.0",
+        "cost_per_level": 5.0,
+        "type": "absolute",
+        "base_cost": "0",
+        "category": "MIL",
+        "image": "attrition_for_enemies.png",
+        "name": "max_hostile_attrition"
+    },
+    {
+        "bonus": "Monarch power tribute",
+        "per_level": "+1",
+        "cost_per_level": 25.0,
+        "type": "absolute",
+        "base_cost": "0",
+        "category": "ADM",
+        "image": "monarch_power_tribute.png",
+        "name": "monarch_power_tribute"
+    },
+    {
+        "bonus": "Prestige per development from conversion",
+        "per_level": "+0.50",
+        "cost_per_level": 3.0,
+        "type": "absolute",
+        "base_cost": "0",
+        "category": "ADM",
+        "image": "prestige_per_development_from_missionary.png",
+        "name": "prestige_per_development_from_conversion"
+    },
+    {
+        "bonus": "Qizilbash privilege slots",
+        "per_level": "+1",
+        "cost_per_level": 30.0,
+        "type": "absolute",
+        "base_cost": "30",
+        "category": "MIL",
+        "image": "qizilbash_privilege_slots.png",
+        "name": "qizilbash_privilege_slots"
+    },
+    {
+        "bonus": "Siege blockade progress",
+        "per_level": "+1",
+        "cost_per_level": 5.0,
+        "type": "absolute",
+        "base_cost": "0",
+        "category": "MIL",
+        "image": "siege_blockade_progress.png",
+        "name": "siege_blockade_progress"
+    },
+    {
+        "bonus": "Stability cost to declare war",
+        "per_level": "-1",
+        "cost_per_level": 30.0,
+        "type": "absolute",
+        "base_cost": "0",
+        "category": "DIP",
+        "image": "stability_cost_to_declare_war.png",
+        "name": "stability_cost_to_declare_war"
+    },
+    {
+        "bonus": "Yearly government power",
+        "per_level": "+0.50",
+        "cost_per_level": 15.0,
+        "type": "absolute",
+        "base_cost": "0",
+        "category": "ADM",
+        "image": "yearly_government_power.png",
+        "name": "yearly_government_power"
+    },
+    {
+        "bonus": "Cost of enforcing religion through war",
+        "per_level": "-25.0",
+        "cost_per_level": 5.0,
+        "type": "percentage",
+        "base_cost": "0",
+        "category": "DIP",
+        "image": "cost_of_enforcing_religion_through_war.png",
+        "name": "enforce_religion_cost"
+    },
+    {
+        "bonus": "General recruitment cost",
+        "per_level": "-25.0",
+        "cost_per_level": 15.0,
+        "type": "percentage",
+        "base_cost": "15",
+        "category": "MIL",
+        "image": "general_recruitment_cost.png",
+        "name": "general_cost"
+    },
+    {
+        "bonus": "Imperial authority growth modifier",
+        "per_level": "+10.0",
+        "cost_per_level": 25.0,
+        "type": "percentage",
+        "base_cost": "5",
+        "category": "ADM",
+        "image": "imperial_authority_growth_modifier.png",
+        "name": "imperial_authority_value"
+    },
+    {
+        "bonus": "Morale damage",
+        "per_level": "+5.0",
+        "cost_per_level": 5.0,
+        "type": "percentage",
+        "base_cost": "0",
+        "category": "MIL",
+        "image": "morale_damage.png",
+        "name": "morale_damage"
+    },
+    {
+        "bonus": "Ship tradepower propagation",
+        "per_level": "+10.0",
+        "cost_per_level": 3.0,
+        "type": "percentage",
+        "base_cost": "0",
+        "category": "DIP",
+        "image": "ship_tradepower_propagation.png",
+        "name": "ship_power_propagation"
+    },
+    {
+        "bonus": "States governing cost",
+        "per_level": "-5.0",
+        "cost_per_level": 5.0,
+        "type": "percentage",
+        "base_cost": "0",
+        "category": "ADM",
+        "image": "states_governing_cost.png",
+        "name": "state_governing_cost"
     }
 ]

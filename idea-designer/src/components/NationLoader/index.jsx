@@ -10,7 +10,16 @@ const NationLoader = ({ options, onSelect, name }) => {
     var newIdeas = [];
     //Traditions
     Object.keys(item["slot0"]).forEach(ideaName =>{
-      var idea = ideas.find(obj => obj.name == ideaName)
+      var foundIdea = ideas.find(obj => obj.name == ideaName);
+      
+      if (!foundIdea) {
+        console.warn(`Tradição não encontrada: ${ideaName}`);
+        return; // Pula esta iteração caso não encontre
+      }
+
+      // Faz uma cópia do objeto para não mutar o estado original do contexto
+      var idea = { ...foundIdea };
+      
       // Pegando o nivel da Ideia
       var bonus = item["slot0"][ideaName];
   
@@ -31,7 +40,15 @@ const NationLoader = ({ options, onSelect, name }) => {
 
       // Pegando os dados de todas as ideias do slot
       Object.keys(slot).forEach(ideaName => {
-        var idea = ideas.find(obj => obj.name == ideaName)
+        var foundIdea = ideas.find(obj => obj.name == ideaName);
+        
+        if (!foundIdea) {
+          console.warn(`Ideia não encontrada: ${ideaName}`);
+          return; // Pula esta iteração caso não encontre
+        }
+
+        // Faz uma cópia do objeto para não mutar o estado original do contexto
+        var idea = { ...foundIdea };
         var bonus = slot[ideaName];
 
         if (idea.type == "percentage") {
@@ -44,11 +61,14 @@ const NationLoader = ({ options, onSelect, name }) => {
         slotData = slotData.concat(idea)
       })
 
-      newIdeas = newIdeas.concat([slotData]);
+      if (slotData.length > 0) {
+        newIdeas = newIdeas.concat([slotData]);
+      }
     }
     onSelect(newIdeas); // Chama a função passada como prop
     setIsOpen(false); // Fecha o dropdown
   };
+  
   const avaliableNations = Object.keys(options)
 
   return (

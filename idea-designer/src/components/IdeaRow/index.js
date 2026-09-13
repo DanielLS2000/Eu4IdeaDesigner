@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { useCountriesContext } from '@/context/countriesContext';
 import DropdownMenu from '../DropdownMenu';
 import IdeaSlotMenu from '../IdeaSlotMenu';
+
 const IdeaRow = ({id, idea}) => {
     const {ideaSet, ideas, updateIdea} = useIdeaSetContext();
     const {countries, countriesList} = useCountriesContext();
@@ -16,10 +17,16 @@ const IdeaRow = ({id, idea}) => {
     countries.map((tag) => {
         var traditions = Object.keys(countriesList[tag].slot0);
         traditions = traditions.map((availableIdea) => {
-            // Debug Seleciona país e não acha ideias resultando em crash
-            console.log([ideas.filter(obj => obj.name == availableIdea)[0]])
-            return [[ideas.filter(obj => obj.name == availableIdea)[0].bonus, availableIdea]]
-        })
+            const foundIdea = ideas.find(obj => obj.name === availableIdea);
+            
+            if (!foundIdea) {
+                console.warn(`Tradição não encontrada: ${availableIdea}`);
+                return null;
+            }
+            
+            return [[foundIdea.bonus, availableIdea]];
+        }).filter(Boolean); // Remove os itens nulos do array
+
         availableIdeas = availableIdeas.concat(traditions)
     });
 
@@ -31,9 +38,15 @@ const IdeaRow = ({id, idea}) => {
                 var dummies = Object.keys(countriesList[tag][`slot${i - 1}`]);
                 // Buscando o nome das ideias na lista de ideias
                 dummies = dummies.map((dummy) => {
-                    console.log([ideas.filter(obj => obj.name == dummy)[0].bonus])
-                    return [ideas.filter(obj => obj.name == dummy)[0].bonus, dummy]
-                })
+                    const foundIdea = ideas.find(obj => obj.name === dummy);
+                    
+                    if (!foundIdea) {
+                        console.warn(`Ideia não encontrada: ${dummy}`);
+                        return null;
+                    }
+                    
+                    return [foundIdea.bonus, dummy];
+                }).filter(Boolean); // Remove os itens nulos do array
                 
                 availableIdeas = availableIdeas.concat([dummies])
             })
