@@ -26,11 +26,14 @@
 
 .ideaSelector-section--ideas .ideaSelector-list {
     flex: 1 1 0;
+    overflow-y: auto;
 }
 
 .ideaSelector-section--ideas .idea-selector-row {
-    flex: 1 1 0;
-    min-height: 48px;
+    /* Em telas amplas, as sete linhas dividem toda a área livre. Em zoom alto,
+       64px é o limite mínimo antes de a lista começar a rolar. */
+    flex: 1 0 64px;
+    min-height: 64px;
 }
 
 .ideaSelector-section--traditions .idea-selector-row,

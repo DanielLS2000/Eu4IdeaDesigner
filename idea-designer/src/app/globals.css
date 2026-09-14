@@ -39,7 +39,7 @@ body {
 .primaryContainer {
   flex: 3;
   padding: 10px;
-  overflow-y: auto;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }

@@ -2,8 +2,10 @@ import React, { useState, useRef, useEffect } from "react";
 
 const DropdownMenu = ({ options, onSelect, name}) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [opensUpward, setOpensUpward] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const dropdownRef = useRef(null);
+  const buttonRef = useRef(null);
 
   const filteredOptions = options.filter((option) => {
     let match = false;
@@ -27,12 +29,23 @@ const DropdownMenu = ({ options, onSelect, name}) => {
     setSearchQuery("");
   };
 
+  const toggleMenu = () => {
+    if (!isOpen && buttonRef.current) {
+      const buttonBounds = buttonRef.current.getBoundingClientRect();
+      const spaceBelow = window.innerHeight - buttonBounds.bottom;
+      const spaceAbove = buttonBounds.top;
+      setOpensUpward(spaceBelow < 300 && spaceAbove > spaceBelow);
+    }
+    setIsOpen((open) => !open);
+  };
+
   return (
     <div className="relative inline-block w-full" ref={dropdownRef}>
       
       <button 
+        ref={buttonRef}
         className="relative w-full h-[26px] flex items-center justify-between px-2 bg-[#1e2328] border-[1.5px] border-[#5a4225] text-[#d9c49c] font-serif font-bold text-[12px] rounded-sm shadow-[0_2px_4px_rgba(0,0,0,0.5),inset_0_0_8px_rgba(0,0,0,0.8)] hover:bg-[#2a3138] hover:text-[#f4ecd8] active:brightness-90 transition-all"
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={toggleMenu}
       >
         {/* Cantos do Botão Metálico */}
         <div className="absolute -top-[1.5px] -left-[1.5px] w-2 h-2 bg-[url('/images/corner-button.png')] bg-contain bg-no-repeat pointer-events-none"></div>
@@ -45,7 +58,7 @@ const DropdownMenu = ({ options, onSelect, name}) => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-[110%] w-full bg-[#d9c49c] border-2 border-[#6b4d24] rounded-sm shadow-[0_8px_16px_rgba(0,0,0,0.9)] z-50 flex flex-col">
+        <div className={`absolute right-0 ${opensUpward ? "bottom-[110%]" : "top-[110%]"} w-full bg-[#d9c49c] border-2 border-[#6b4d24] rounded-sm shadow-[0_8px_16px_rgba(0,0,0,0.9)] z-50 flex flex-col`}>
           
           {/* Cantos do Pergaminho */}
           <div className="absolute -top-[2px] -left-[2px] w-4 h-4 bg-[url('/images/corner-parchment.png')] bg-contain bg-no-repeat pointer-events-none z-20"></div>

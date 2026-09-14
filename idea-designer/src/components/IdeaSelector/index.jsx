@@ -78,7 +78,7 @@ const IdeaSelector = () => {
       {/* Ideas Section */}
       <div className="ideaSelector-section ideaSelector-section--ideas">
         <SectionHeader title="Ideas" />
-        <div className="ideaSelector-list">
+        <div className="ideaSelector-list eu4-scrollbar">
           {ideas.map((idea, index) => <IdeaRow idea={idea} key={`${resetVersion}-${index + 2}`} id={index + 2} />)}
         </div>
       </div>
