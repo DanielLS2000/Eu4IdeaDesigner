@@ -184,13 +184,13 @@ export const IdeaSetProvider = ({children}) => {
       ideaSet.map((ideaSlot)=>{
         ideaSlot.map((idea)=>{
           if (idea.category == "ADM"){
-            admLevels++;
+            admLevels += idea.level;
           }
           else if (idea.category == "DIP"){
-            dipLevels++;
+            dipLevels += idea.level;
           }
           else{
-            milLevels++;
+            milLevels += idea.level;
           }
         })
       })
