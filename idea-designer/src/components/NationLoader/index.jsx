@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import "./NationLoader.css";
+import React, { useState, useRef, useEffect } from "react";
 import { useIdeaSetContext } from "@/context/IdeaSetContext";
 
 const NationLoader = ({ options, onSelect, name }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { ideas } = useIdeaSetContext();
+  const dropdownRef = useRef(null);
 
-  // Lista dos modificadores que são exclusivos entre si dependendo do governo
   const govMechanics = [
     "legitimacy",
     "devotion",
@@ -15,7 +14,18 @@ const NationLoader = ({ options, onSelect, name }) => {
     "horde_unity"
   ];
 
-  // Função auxiliar para processar e formatar uma única ideia
+  // Fecha o dropdown ao clicar fora dele
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  // Lógica original de processamento
   const parseIdea = (ideaName, rawBonus, isGov, isFirstGov) => {
     var foundIdea = ideas.find((obj) => obj.name === ideaName);
 
@@ -24,7 +34,7 @@ const NationLoader = ({ options, onSelect, name }) => {
       return null;
     }
 
-    var idea = { ...foundIdea }; // Cópia para não mutar o estado base
+    var idea = { ...foundIdea };
 
     if (idea.type === "percentage") {
       idea["level"] = Math.abs((parseFloat(rawBonus) * 100) / parseFloat(idea.per_level));
@@ -34,7 +44,6 @@ const NationLoader = ({ options, onSelect, name }) => {
       idea["level"] = 1;
     }
 
-    // Zera o custo dos atributos de governo excedentes para contar o custo apenas 1 vez
     if (isGov && !isFirstGov) {
       idea.base_cost = 0;
       idea.cost_per_level = 0;
@@ -46,8 +55,6 @@ const NationLoader = ({ options, onSelect, name }) => {
   const handleSelect = (item) => {
     var newIdeas = [];
 
-    // --- Processamento do Slot 0 (Traditions) ---
-    // O Slot 0 sempre deve retornar exatamente 2 arrays para preencher as Tradições 1 e 2
     if (item["slot0"]) {
       let keys = Object.keys(item["slot0"]);
       let govKeys = keys.filter((k) => govMechanics.includes(k));
@@ -56,20 +63,17 @@ const NationLoader = ({ options, onSelect, name }) => {
       let trad1 = [];
       let trad2 = [];
 
-      // Se houver mecânicas de governo, todas vão para a Tradição 1 agrupadas
       if (govKeys.length > 0) {
         govKeys.forEach((k, index) => {
           let ideaObj = parseIdea(k, item["slot0"][k], true, index === 0);
           if (ideaObj) trad1.push(ideaObj);
         });
         
-        // A ideia restante vai para a Tradição 2
         regKeys.forEach((k) => {
           let ideaObj = parseIdea(k, item["slot0"][k], false, false);
           if (ideaObj) trad2.push(ideaObj);
         });
       } else {
-        // Se não houver, divide a primeira na Tradição 1 e o resto na Tradição 2
         if (regKeys.length > 0) {
           let ideaObj = parseIdea(regKeys[0], item["slot0"][regKeys[0]], false, false);
           if (ideaObj) trad1.push(ideaObj);
@@ -87,7 +91,6 @@ const NationLoader = ({ options, onSelect, name }) => {
       newIdeas.push([]);
     }
 
-    // --- Processamento dos Slots 1 a 8 (Ideas e Ambition) ---
     for (var i = 1; i <= 8; i++) {
       var slot = item[`slot${i}`];
       var slotData = [];
@@ -99,7 +102,6 @@ const NationLoader = ({ options, onSelect, name }) => {
           let isGov = govMechanics.includes(ideaName);
           let isFirstGov = false;
 
-          // Sinaliza se é o primeiro atributo de governo do slot para manter seu custo
           if (isGov) {
             if (!foundGov) {
               isFirstGov = true;
@@ -112,7 +114,7 @@ const NationLoader = ({ options, onSelect, name }) => {
         });
       }
 
-      newIdeas.push(slotData); // Mesmo se estiver vazio, adiciona para não quebrar a ordem
+      newIdeas.push(slotData);
     }
 
     onSelect(newIdeas);
@@ -122,27 +124,35 @@ const NationLoader = ({ options, onSelect, name }) => {
   const avaliableNations = Object.keys(options);
 
   return (
-    <div className="nation-loader">
-      <button className="nation-loader-button" onClick={() => setIsOpen(!isOpen)}>
-        Load {name} ideas{isOpen ? "▲" : "▼"}
+    <div className="relative inline-block" ref={dropdownRef}>
+      <button 
+        className="w-[180px] h-[30px] flex items-center justify-between px-3 bg-gradient-to-b from-[#40688a] to-[#25415c] border border-[#a88a52] text-[#f4ecd8] font-serif font-bold text-[13px] rounded-sm shadow-[0_2px_4px_rgba(0,0,0,0.5),inset_0_1px_1px_rgba(255,255,255,0.2)] hover:brightness-110 active:brightness-90 transition-all"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span>Load {name}</span>
+        <span className="text-[10px]">{isOpen ? "▲" : "▼"}</span>
       </button>
 
       {isOpen && (
-        <div className="dropdown-container">
-          <div className="dropdown-options">
-            {avaliableNations.length > 0 ? (
-              avaliableNations.map((option, index) => (
-                <div
-                  key={index}
-                  className="dropdown-option"
-                  onClick={() => handleSelect(options[option])}
-                >
-                  {option}
+        <div className="absolute right-0 top-[110%] w-[200px] bg-[#d9c49c] border-2 border-[#8c6b3e] rounded-sm shadow-[0_8px_16px_rgba(0,0,0,0.8)] z-50 overflow-hidden">
+          <div className="border border-[#e8dcc4] w-full h-full">
+            <div className="max-h-[240px] overflow-y-auto eu4-scrollbar">
+              {avaliableNations.length > 0 ? (
+                avaliableNations.map((option, index) => (
+                  <div
+                    key={index}
+                    className="px-3 py-1.5 cursor-pointer font-serif text-[14px] text-[#332211] font-bold border-b border-[#c2a977] hover:bg-[#e6d6b8] hover:text-black transition-colors"
+                    onClick={() => handleSelect(options[option])}
+                  >
+                    {option}
+                  </div>
+                ))
+              ) : (
+                <div className="px-3 py-2 text-center font-serif text-[13px] text-[#8c6b3e] italic">
+                  No {name} Available
                 </div>
-              ))
-            ) : (
-              <div className="dropdown-no-results">No {name} Available</div>
-            )}
+              )}
+            </div>
           </div>
         </div>
       )}

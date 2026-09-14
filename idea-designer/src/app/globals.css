@@ -58,6 +58,25 @@ body {
   height: 100vh;
 }
 
+/* Custom Scrollbar for Parchment Menus */
+.eu4-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.eu4-scrollbar::-webkit-scrollbar-track {
+  background: #2b1d0f;
+  border-left: 1px solid #4a351d;
+}
+
+.eu4-scrollbar::-webkit-scrollbar-thumb {
+  background: #8c6b3e;
+  border: 1px solid #c9ab72;
+  border-radius: 2px;
+}
+
+.eu4-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #a88a52;
+}
 
 
 
