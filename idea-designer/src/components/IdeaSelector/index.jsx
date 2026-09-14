@@ -56,7 +56,7 @@ const IdeaSelector = () => {
   );
 
   return (
-    <div className="flex flex-col gap-6 w-full">
+    <div className="ideaSelector">
       <div className="flex justify-end -mb-3">
         <button
           type="button"
@@ -68,25 +68,25 @@ const IdeaSelector = () => {
       </div>
 
       {/* Traditions Section */}
-      <div>
+      <div className="ideaSelector-section ideaSelector-section--traditions">
         <SectionHeader title="Traditions" />
-        <div className="flex flex-col gap-1">
+        <div className="ideaSelector-list">
           {traditions.map((idea, index) => <IdeaRow idea={idea} key={`${resetVersion}-${index}`} id={index} />)}
         </div>
       </div>
 
       {/* Ideas Section */}
-      <div>
+      <div className="ideaSelector-section ideaSelector-section--ideas">
         <SectionHeader title="Ideas" />
-        <div className="flex flex-col gap-1">
+        <div className="ideaSelector-list">
           {ideas.map((idea, index) => <IdeaRow idea={idea} key={`${resetVersion}-${index + 2}`} id={index + 2} />)}
         </div>
       </div>
 
       {/* Ambition Section */}
-      <div>
+      <div className="ideaSelector-section ideaSelector-section--ambition">
         <SectionHeader title="Ambition" />
-        <div className="flex flex-col gap-1">
+        <div className="ideaSelector-list">
           {ambition.map((idea, index) => <IdeaRow idea={idea} key={`${resetVersion}-9`} id={9} />)}
         </div>
       </div>

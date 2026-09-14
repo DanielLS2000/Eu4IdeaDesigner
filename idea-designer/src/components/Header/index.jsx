@@ -3,6 +3,7 @@ import { useCountriesContext } from '@/context/countriesContext';
 import { useIdeaSetContext } from '@/context/IdeaSetContext';
 import NationSelector from '../NationSelector';
 import NationLoader from '../NationLoader';
+import ExportIdeasButton from '../ExportIdeasButton';
 
 const Header = () => {
     const { countries, removeCountry, countriesList, addCountry } = useCountriesContext();
@@ -68,6 +69,8 @@ const Header = () => {
                     onSelect={addCountry} 
                     name={"Nations"}
                 />
+
+                <ExportIdeasButton />
             </div>
         </header>
     );

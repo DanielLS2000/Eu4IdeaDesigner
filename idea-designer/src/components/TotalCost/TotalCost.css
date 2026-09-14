@@ -1,14 +1,10 @@
 .totalCost {
-    padding: 15px 5px 5px 5px;
+  width: 100%; flex: 0 0 auto; padding: 5px 4px 6px; box-sizing: border-box; color: #f1e3c6;
+  font-family: Georgia, "Times New Roman", serif;
+  background: linear-gradient(90deg, #1b2227, #263139 50%, #1a2228);
+  border: 2px solid #4a321d; border-top: 1px solid #8a6040;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.65), inset 0 0 14px rgba(0, 0, 0, 0.65);
 }
-
-.line {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.line h2 {
-    font-weight: bold;
-    text-align: center;
-    color: rgb(199, 199, 199);
-}
+.totalCost .line { display: grid; grid-template-columns: 1.1fr repeat(4, 1fr); align-items: center; }
+.totalCost .line h2 { margin: 0; padding: 1px 0; color: inherit; font-size: 11px; font-weight: 700; line-height: 1.15; text-align: center; text-shadow: 1px 1px #0b0c0d; }
+.totalCost .line:last-child h2 { color: #ddc18e; }

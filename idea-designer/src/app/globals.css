@@ -40,13 +40,17 @@ body {
   flex: 3;
   padding: 10px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .secondaryContainer {
   flex: 1;
   padding: 10px;
-  overflow-y: auto;
+  overflow: hidden;
   border-left: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
