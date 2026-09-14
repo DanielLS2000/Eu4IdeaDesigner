@@ -17,7 +17,7 @@ const IdeaRow = ({id, idea}) => {
         traditions = traditions.map((availableIdea) => {
             const foundIdea = ideas.find(obj => obj.name === availableIdea);
             if (!foundIdea) return null;
-            return [[foundIdea.bonus, availableIdea]];
+            return [[foundIdea.bonus, availableIdea, foundIdea.name]];
         }).filter(Boolean); 
         availableIdeas = availableIdeas.concat(traditions)
     });
@@ -29,7 +29,7 @@ const IdeaRow = ({id, idea}) => {
                 dummies = dummies.map((dummy) => {
                     const foundIdea = ideas.find(obj => obj.name === dummy);
                     if (!foundIdea) return null;
-                    return [foundIdea.bonus, dummy];
+                    return [foundIdea.bonus, dummy, foundIdea.name];
                 }).filter(Boolean); 
                 availableIdeas = availableIdeas.concat([dummies])
             })

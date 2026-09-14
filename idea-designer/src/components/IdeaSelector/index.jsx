@@ -1,9 +1,11 @@
 import { useIdeaSetContext } from "@/context/IdeaSetContext";
 import IdeaRow from "../IdeaRow";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import "./IdeaSelector.css";
 
 const IdeaSelector = () => {
   const { ideaSet, setIdeaSet, Idea} = useIdeaSetContext();
+  const [resetVersion, setResetVersion] = useState(0);
 
   useEffect(() => {
     const savedIdeaSet = localStorage.getItem("ideaSet");
@@ -24,19 +26,29 @@ const IdeaSelector = () => {
   const ideas = ideaSet.slice(2, 9);
   const ambition = ideaSet.slice(9, 10);
 
+  const clearAllIdeas = () => {
+    setIdeaSet(
+      Array.from({ length: 10 }, (_, id) => {
+        const name = id < 2 ? `Tradition ${id + 1}` : id < 9 ? `Idea ${id - 1}` : "Ambition";
+        return [new Idea(id, name, 1, 5, 3, "percentage", 0, "ADM", "unknown")];
+      })
+    );
+    setResetVersion((version) => version + 1);
+  };
+
   // Cabeçalhos limpos, sem bordas, apenas a imagem de fundo esticada para preencher
   const SectionHeader = ({ title }) => (
-    <div className="grid grid-cols-[3fr_1fr_1.5fr_1fr_2.5fr_0.5fr] gap-x-3 items-center mb-1">
-      <div className="flex items-center justify-center h-[32px] bg-[url('/images/red-banner.png')] bg-[length:100%_100%] bg-no-repeat shadow-sm">
+    <div className="sectionHeader">
+      <div className="sectionHeaderItem shadow-sm">
         <h2 className="font-serif font-bold text-[#f4ecd8] text-[15px] drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]">{title}</h2>
       </div>
-      <div className="flex items-center justify-center h-[32px] bg-[url('/images/red-banner.png')] bg-[length:100%_100%] bg-no-repeat shadow-sm">
+      <div className="sectionHeaderItem shadow-sm">
         <h2 className="font-serif font-bold text-[#f4ecd8] text-[15px] drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]">Level</h2>
       </div>
-      <div className="flex items-center justify-center h-[32px] bg-[url('/images/red-banner.png')] bg-[length:100%_100%] bg-no-repeat shadow-sm">
+      <div className="sectionHeaderItem shadow-sm">
         <h2 className="font-serif font-bold text-[#f4ecd8] text-[15px] drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]">Bonus</h2>
       </div>
-      <div className="flex items-center justify-center h-[32px] bg-[url('/images/red-banner.png')] bg-[length:100%_100%] bg-no-repeat shadow-sm">
+      <div className="sectionHeaderItem shadow-sm">
         <h2 className="font-serif font-bold text-[#f4ecd8] text-[15px] drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]">Cost</h2>
       </div>
       <div className="col-span-2"></div>
@@ -45,11 +57,21 @@ const IdeaSelector = () => {
 
   return (
     <div className="flex flex-col gap-6 w-full">
+      <div className="flex justify-end -mb-3">
+        <button
+          type="button"
+          onClick={clearAllIdeas}
+          className="h-[26px] px-3 bg-[#1e2328] border-[1.5px] border-[#5a4225] rounded-sm text-[#d9c49c] font-serif font-bold text-[12px] shadow-[0_2px_4px_rgba(0,0,0,0.5),inset_0_0_8px_rgba(0,0,0,0.8)] hover:bg-[#2a3138] hover:text-[#f4ecd8] active:brightness-90 transition-all"
+        >
+          Clear All Ideas
+        </button>
+      </div>
+
       {/* Traditions Section */}
       <div>
         <SectionHeader title="Traditions" />
         <div className="flex flex-col gap-1">
-          {traditions.map((idea, index) => <IdeaRow idea={idea} key={index} id={index} />)}
+          {traditions.map((idea, index) => <IdeaRow idea={idea} key={`${resetVersion}-${index}`} id={index} />)}
         </div>
       </div>
 
@@ -57,7 +79,7 @@ const IdeaSelector = () => {
       <div>
         <SectionHeader title="Ideas" />
         <div className="flex flex-col gap-1">
-          {ideas.map((idea, index) => <IdeaRow idea={idea} key={index + 2} id={index + 2} />)}
+          {ideas.map((idea, index) => <IdeaRow idea={idea} key={`${resetVersion}-${index + 2}`} id={index + 2} />)}
         </div>
       </div>
 
@@ -65,7 +87,7 @@ const IdeaSelector = () => {
       <div>
         <SectionHeader title="Ambition" />
         <div className="flex flex-col gap-1">
-          {ambition.map((idea, index) => <IdeaRow idea={idea} key={9} id={9} />)}
+          {ambition.map((idea, index) => <IdeaRow idea={idea} key={`${resetVersion}-9`} id={9} />)}
         </div>
       </div>
     </div>

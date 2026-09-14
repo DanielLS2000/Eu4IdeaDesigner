@@ -45,7 +45,7 @@ const DropdownMenu = ({ options, onSelect, name}) => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-[110%] w-[240px] bg-[#d9c49c] border-2 border-[#6b4d24] rounded-sm shadow-[0_8px_16px_rgba(0,0,0,0.9)] z-50 flex flex-col">
+        <div className="absolute right-0 top-[110%] w-full bg-[#d9c49c] border-2 border-[#6b4d24] rounded-sm shadow-[0_8px_16px_rgba(0,0,0,0.9)] z-50 flex flex-col">
           
           {/* Cantos do Pergaminho */}
           <div className="absolute -top-[2px] -left-[2px] w-4 h-4 bg-[url('/images/corner-parchment.png')] bg-contain bg-no-repeat pointer-events-none z-20"></div>
@@ -74,7 +74,14 @@ const DropdownMenu = ({ options, onSelect, name}) => {
                     className="px-3 py-1.5 cursor-pointer font-serif text-[13px] text-[#332211] font-bold border-b border-[#c2a977] hover:bg-[#e6d6b8] hover:text-black transition-colors"
                   >
                     {option.map((idea) => (
-                      <div key={idea[1]} className="truncate">{idea[0]}</div>
+                      <div key={idea[1]} className="flex items-center gap-2 min-w-0">
+                        <img
+                          src={`/images/ideaEu4/${idea[2]}.png`}
+                          alt=""
+                          className="w-6 h-6 object-contain shrink-0"
+                        />
+                        <span className="truncate">{idea[0]}</span>
+                      </div>
                     ))}
                   </div>
                 ))
