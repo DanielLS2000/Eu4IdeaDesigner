@@ -17,7 +17,7 @@ const IdeaRow = ({id, idea}) => {
         traditions = traditions.map((availableIdea) => {
             const foundIdea = ideas.find(obj => obj.name === availableIdea);
             if (!foundIdea) return null;
-            return [[foundIdea.bonus, availableIdea, foundIdea.name]];
+            return [[foundIdea.bonus, availableIdea, foundIdea.name, countriesList[tag].slot0[availableIdea], tag]];
         }).filter(Boolean); 
         availableIdeas = availableIdeas.concat(traditions)
     });
@@ -25,11 +25,12 @@ const IdeaRow = ({id, idea}) => {
     for (var i=2; i<10;i++){
         if (id >= i){
             countries.map((tag) => {
-                var dummies = Object.keys(countriesList[tag][`slot${i - 1}`]);
+                var countrySlot = countriesList[tag][`slot${i - 1}`];
+                var dummies = Object.keys(countrySlot);
                 dummies = dummies.map((dummy) => {
                     const foundIdea = ideas.find(obj => obj.name === dummy);
                     if (!foundIdea) return null;
-                    return [foundIdea.bonus, dummy, foundIdea.name];
+                    return [foundIdea.bonus, dummy, foundIdea.name, countrySlot[dummy], tag];
                 }).filter(Boolean); 
                 availableIdeas = availableIdeas.concat([dummies])
             })
@@ -40,6 +41,7 @@ const IdeaRow = ({id, idea}) => {
         var alreadySelected = false;
         availableIdea.forEach(item=> {
             for(var i=0;i<10;i++){
+                if (i === id) continue;
                 for(var j=0; j<ideaSet[i].length;j++){
                     if(ideaSet[i][j].name === item[0]){
                         alreadySelected = true;
@@ -53,10 +55,29 @@ const IdeaRow = ({id, idea}) => {
     filteredIdeas = filteredIdeas.filter((el) => el !== undefined)
 
     const selectIdea = (item) => {
-        var filteredData = [];
-        for (var i=0;i<item.length;i++){
-            filteredData = filteredData.concat(ideas.filter(obj => obj.name == item[i][1]))
-        }
+        var filteredData = item.map((selectedItem) => {
+            const sourceIdea = ideas.find((obj) => obj.name == selectedItem[1]);
+            if (!sourceIdea) return null;
+
+            const countryBonus = selectedItem[3];
+            const originCountry = selectedItem[4];
+            const rawValue = parseFloat(countryBonus);
+            let level = 1;
+
+            if (sourceIdea.type === "percentage") {
+                level = Math.abs((rawValue * 100) / parseFloat(sourceIdea.per_level));
+            } else if (sourceIdea.type === "absolute") {
+                level = Math.abs(rawValue / parseFloat(sourceIdea.per_level));
+            }
+
+            return {
+                ...sourceIdea,
+                level,
+                originCountry,
+                countryBonus,
+                isCountryValue: true,
+            };
+        }).filter(Boolean);
         updateIdea(id, filteredData);
         setSelectedIdea(0);
     }
@@ -74,7 +95,12 @@ const IdeaRow = ({id, idea}) => {
     }
 
     return (
-        <div className="idea-selector-row grid grid-cols-[3fr_1fr_1.5fr_1fr_2.5fr_0.5fr] gap-x-3 items-center px-3 py-2 bg-[#252f38]/60 hover:bg-[#2d3843] border-b border-[#3e4b59] transition-colors">
+        <div className="idea-selector-row relative grid grid-cols-[3fr_1fr_1.5fr_1fr_2.5fr_0.5fr] gap-x-3 items-center px-3 py-2 bg-[#252f38]/60 hover:bg-[#2d3843] border-b border-[#3e4b59] transition-colors">
+            {idea[selectedIdea]?.originCountry && (
+                <span className="absolute top-1 right-10 text-[10px] font-serif font-bold text-[#c9ab72] drop-shadow-[1px_1px_1px_rgba(0,0,0,0.9)]">
+                    {idea[selectedIdea].originCountry}
+                </span>
+            )}
             
             <div className="flex items-center">
                 <IdeaSlotMenu options={idea} onSelect={setSelectedIdea} selectedIdea={selectedIdea} />

@@ -15,7 +15,8 @@ const IdeaSelector = () => {
           idea =>
             new Idea(
               idea.id, idea.name, idea.level, idea.bonus_per_level,
-              idea.cost_per_level, idea.type, idea.base_cost, idea.category, idea.image
+              idea.cost_per_level, idea.type, idea.base_cost, idea.category, idea.image,
+              idea.originCountry, idea.countryBonus, idea.isCountryValue
             )
         )
       ));

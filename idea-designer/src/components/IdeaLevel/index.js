@@ -19,7 +19,7 @@ const IdeaLevel = ({id, idea, selectedIdea}) => {
             </button>
 
             <div>
-                {idea[selectedIdea].level.toFixed(0)}
+                {idea[selectedIdea].isCountryValue ? "—" : idea[selectedIdea].level.toFixed(0)}
             </div>
             
             <button onClick={levelUp}>

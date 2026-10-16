@@ -3,6 +3,10 @@ import { useIdeaSetContext } from "@/context/IdeaSetContext";
 const formatModifierValue = (idea) => {
   if (idea.type === "binary") return "yes";
 
+  if (idea.isCountryValue && idea.countryBonus != null) {
+    return String(idea.countryBonus).split("#")[0].trim();
+  }
+
   const value = Number(idea.bonus_per_level) * Number(idea.level);
   const exportValue = idea.type === "percentage" ? value / 100 : value;
   return Number(exportValue.toFixed(6)).toString();

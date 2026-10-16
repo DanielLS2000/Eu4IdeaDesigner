@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
 class Idea {
-  constructor(id, name, level, bonus_per_level, cost_per_level, type, base_cost, category, image) {
+  constructor(id, name, level, bonus_per_level, cost_per_level, type, base_cost, category, image, originCountry = null, countryBonus = null, isCountryValue = false) {
     this.id = id;
     this.name = name;
     this.level = level;
@@ -11,6 +11,9 @@ class Idea {
     this.base_cost = base_cost;
     this.category = category;
     this.image = image;
+    this.originCountry = originCountry;
+    this.countryBonus = countryBonus;
+    this.isCountryValue = isCountryValue;
   }
 
   updateDetails(ideasData){
@@ -22,6 +25,9 @@ class Idea {
     if (ideasData.base_cost != undefined) this.base_cost = parseInt(ideasData.base_cost);
     if (ideasData.category != undefined) this.category = ideasData.category;
     if (ideasData.image != undefined) this.image = ideasData.name;
+    this.originCountry = ideasData.originCountry ?? null;
+    this.countryBonus = ideasData.countryBonus ?? null;
+    this.isCountryValue = ideasData.isCountryValue === true;
     if (ideasData.level != undefined && ideasData.level > 0) {
       this.level = ideasData.level;
     } else {
@@ -72,6 +78,16 @@ class Idea {
   }
 
   getBonus(){
+    if (this.isCountryValue) {
+      if (this.type == "binary") return "yes";
+
+      const rawValue = parseFloat(this.countryBonus);
+      if (Number.isNaN(rawValue)) return this.countryBonus;
+
+      const value = this.type == "percentage" ? rawValue * 100 : rawValue;
+      const formattedValue = Number(value.toFixed(6)).toString();
+      return value > 0 ? `+${formattedValue}${this.type == "percentage" ? "%" : ""}` : `${formattedValue}${this.type == "percentage" ? "%" : ""}`;
+    }
     var bonus;
     if (this.type == "percentage"){
       if (this.bonus_per_level < 0){
@@ -153,7 +169,13 @@ export const IdeaSetProvider = ({children}) => {
         prevList.map((item, index) => {
           if (index === id) {
             const idea = item; // Pega a ideia na lista
-            idea[selectedIdea].updateLevel(num); // Atualiza a ideia usando o método da classe
+            if (idea[selectedIdea].isCountryValue) {
+              idea[selectedIdea].level = 1;
+              idea[selectedIdea].isCountryValue = false;
+              idea[selectedIdea].countryBonus = null;
+            } else {
+              idea[selectedIdea].updateLevel(num);
+            }
             
             return idea;
           }

@@ -26,7 +26,7 @@ const NationLoader = ({ options, onSelect, name }) => {
   }, []);
 
   // Lógica original de processamento
-  const parseIdea = (ideaName, rawBonus, isGov, isFirstGov) => {
+  const parseIdea = (ideaName, rawBonus, isGov, isFirstGov, originCountry) => {
     var foundIdea = ideas.find((obj) => obj.name === ideaName);
 
     if (!foundIdea) {
@@ -49,10 +49,14 @@ const NationLoader = ({ options, onSelect, name }) => {
       idea.cost_per_level = 0;
     }
 
+    idea.originCountry = originCountry;
+    idea.countryBonus = rawBonus;
+    idea.isCountryValue = true;
+
     return idea;
   };
 
-  const handleSelect = (item) => {
+  const handleSelect = (item, originCountry) => {
     var newIdeas = [];
 
     if (item["slot0"]) {
@@ -65,21 +69,21 @@ const NationLoader = ({ options, onSelect, name }) => {
 
       if (govKeys.length > 0) {
         govKeys.forEach((k, index) => {
-          let ideaObj = parseIdea(k, item["slot0"][k], true, index === 0);
+          let ideaObj = parseIdea(k, item["slot0"][k], true, index === 0, originCountry);
           if (ideaObj) trad1.push(ideaObj);
         });
         
         regKeys.forEach((k) => {
-          let ideaObj = parseIdea(k, item["slot0"][k], false, false);
+          let ideaObj = parseIdea(k, item["slot0"][k], false, false, originCountry);
           if (ideaObj) trad2.push(ideaObj);
         });
       } else {
         if (regKeys.length > 0) {
-          let ideaObj = parseIdea(regKeys[0], item["slot0"][regKeys[0]], false, false);
+          let ideaObj = parseIdea(regKeys[0], item["slot0"][regKeys[0]], false, false, originCountry);
           if (ideaObj) trad1.push(ideaObj);
         }
         for (let i = 1; i < regKeys.length; i++) {
-          let ideaObj = parseIdea(regKeys[i], item["slot0"][regKeys[i]], false, false);
+          let ideaObj = parseIdea(regKeys[i], item["slot0"][regKeys[i]], false, false, originCountry);
           if (ideaObj) trad2.push(ideaObj);
         }
       }
@@ -109,7 +113,7 @@ const NationLoader = ({ options, onSelect, name }) => {
             }
           }
 
-          let ideaObj = parseIdea(ideaName, slot[ideaName], isGov, isFirstGov);
+          let ideaObj = parseIdea(ideaName, slot[ideaName], isGov, isFirstGov, originCountry);
           if (ideaObj) slotData.push(ideaObj);
         });
       }
@@ -142,7 +146,7 @@ const NationLoader = ({ options, onSelect, name }) => {
                   <div
                     key={index}
                     className="px-3 py-1.5 cursor-pointer font-serif text-[14px] text-[#332211] font-bold border-b border-[#c2a977] hover:bg-[#e6d6b8] hover:text-black transition-colors"
-                    onClick={() => handleSelect(options[option])}
+                    onClick={() => handleSelect(options[option], option)}
                   >
                     {option}
                   </div>
