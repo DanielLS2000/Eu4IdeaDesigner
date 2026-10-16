@@ -84,8 +84,15 @@ const DropdownMenu = ({ options, onSelect, name}) => {
                   <div
                     key={index}
                     onClick={() => handleSelect(option)}
-                    className="px-3 py-1.5 cursor-pointer font-serif text-[13px] text-[#332211] font-bold border-b border-[#c2a977] hover:bg-[#e6d6b8] hover:text-black transition-colors"
+                    className="relative px-3 py-1.5 cursor-pointer font-serif text-[13px] text-[#332211] font-bold border-b border-[#c2a977] hover:bg-[#e6d6b8] hover:text-black transition-colors"
                   >
+                    {option[0]?.[4] && (
+                      <div className="mb-1 flex justify-end">
+                        <span className="rounded-sm border border-[#8c6b3e] bg-[#c4a673]/70 px-1.5 py-px font-serif text-[9px] font-bold text-[#4a2d15] shadow-sm">
+                          {option[0][4]}
+                        </span>
+                      </div>
+                    )}
                     {option.map((idea) => (
                       <div key={idea[1]} className="flex items-center gap-2 min-w-0">
                         <img

@@ -95,12 +95,7 @@ const IdeaRow = ({id, idea}) => {
     }
 
     return (
-        <div className="idea-selector-row relative grid grid-cols-[3fr_1fr_1.5fr_1fr_2.5fr_0.5fr] gap-x-3 items-center px-3 py-2 bg-[#252f38]/60 hover:bg-[#2d3843] border-b border-[#3e4b59] transition-colors">
-            {idea[selectedIdea]?.originCountry && (
-                <span className="absolute top-1 right-10 text-[10px] font-serif font-bold text-[#c9ab72] drop-shadow-[1px_1px_1px_rgba(0,0,0,0.9)]">
-                    {idea[selectedIdea].originCountry}
-                </span>
-            )}
+        <div className="idea-selector-row grid grid-cols-[3fr_1fr_1.5fr_1fr_2.5fr_0.5fr] gap-x-3 items-center px-3 py-2 bg-[#252f38]/60 hover:bg-[#2d3843] border-b border-[#3e4b59] transition-colors">
             
             <div className="flex items-center">
                 <IdeaSlotMenu options={idea} onSelect={setSelectedIdea} selectedIdea={selectedIdea} />
